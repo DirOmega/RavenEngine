@@ -112,7 +112,7 @@ void Game::Initialize()
 }
 
 //#define Human
-#define SIO 1
+#define SIO 0
 
 //TODO:: DEMO:: setup 4 cameras, one that showcases a different section then move 
 void Game::LoadContent()
@@ -1280,12 +1280,15 @@ void ProcessKeyboardInput();
 
 void Game::Update()
 {
+	Time elapsedTime = this->intervalTimer.Toc();
+	this->intervalTimer.Tic();
+	int timeInSeconds_ms = Time::Quotient(elapsedTime, Time(Time::ONE_MILLISECOND));
+	Trace::out("Frame ms:%d \n", timeInSeconds_ms);
 
 	//Needs to be updated once a frame, Does it though? is there a way to detect changes to save on math.
-
-	this->intervalTimer.Toc();
-
-	pCamTrack->CProcessAnimation(tDelta);
+	//this->intervalTimer.Toc();
+	pCamTrack->CProcessAnimation(elapsedTime);
+	//pCamTrack->CProcessAnimation(tDelta);
 
 	Camera* pCam = CameraManager::GetActiveCamera();
 	pCam->updateCamera();
@@ -1298,11 +1301,9 @@ void Game::Update()
 
 	//	Trace::out("%d: %f\n", i++, currentTime);
 
-	//Time elapsedTime = this->intervalTimer.Toc();
-	//int timeInSeconds_ms = Time::Quotient(elapsedTime, Time(Time::ONE_MILLISECOND));
-	//Trace::out("Frames: ms:%d \n", timeInSeconds_ms);
+	
 
-	//this->intervalTimer.Tic();
+	
 	static Time tCurrent(Time::ZERO);
 
 	//pHIGAD1->CProcessAnimation(tDelta);
@@ -1322,7 +1323,7 @@ void Game::Update()
 
 #else
 
-	pFRIEND->CProcessAnimation(tDelta);
+	pFRIEND->CProcessAnimation(elapsedTime);
 
 #endif
 

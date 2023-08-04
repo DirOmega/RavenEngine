@@ -60,9 +60,7 @@ bool eat(const char * const inFileName,
 		{
 			File::Seek(ph, File::Location::CURRENT, (int)chdr.chunkSize);
 		}
-		
 	}
-
 
 	return retval;
 };

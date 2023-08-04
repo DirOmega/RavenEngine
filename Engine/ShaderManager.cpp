@@ -14,9 +14,6 @@ ShaderManager::ShaderManager(int numStart, int  deltaAdd)
 
 	generateReserves(numStart);
 	poRefLink = new ShaderObject();
-
-	
-
 }
 
 ShaderManager::~ShaderManager()

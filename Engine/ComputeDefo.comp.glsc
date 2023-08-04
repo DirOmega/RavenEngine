@@ -34,7 +34,7 @@ layout(std140, binding = 4) buffer BS0
 
 void main(void)
 {
-	unsigned int gid = gl_GlobalInvocationID.x;
+		uint gid = gl_GlobalInvocationID.x;
 		
 		if(gid < blendData.numVerts)
 		{

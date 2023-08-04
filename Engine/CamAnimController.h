@@ -319,23 +319,26 @@ public:
 	}
 
 
-	//void CProcessAnimation(const Time&)
-	void CProcessAnimation(const float deltaT)
+	void CProcessAnimation(const Time& deltaT)
+	//void CProcessAnimation(const float deltaT)
 	{
+		static const Time tZero(Time::ZERO);
+		static const Time NTSCFrame(Time::NTSC_FRAME);
 		//shapeBlend(internalTime, pCurShapeClip);
 		//		pTestcompute->Dispatch();
 		processAnimHelper(internalTime, pCurClip);
 
 		//processAnimHelper(Time(Time::ZERO), pCurClip);
 
-		Time deltaTime = deltaT * Time(Time::NTSC_30_FRAME);
+		//Time deltaTime = deltaT / NTSCFrame;
+		
+
+		//internalTime += deltaTime;
+		internalTime += deltaT;
 		Time maxTime;
-
-		internalTime += deltaTime;
-
 		FindMaxTime(maxTime);
 
-		static const Time tZero(Time::ZERO);
+		
 
 		// protection for time values for looping
 		if (internalTime < tZero)

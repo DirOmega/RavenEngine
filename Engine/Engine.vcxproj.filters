@@ -211,24 +211,6 @@
     <Filter Include="Source Files\Animation\CamAnim">
       <UniqueIdentifier>{4e8b00e1-97ab-4965-ad71-2b76f92746c4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Libs\GLFW">
-      <UniqueIdentifier>{351f1fad-c1c3-4c3f-a12b-3d6cec16bda5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Libs\GLFW\GLFW">
-      <UniqueIdentifier>{a639f4d7-378c-4ba5-8499-2719d1299a43}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Libs\GLFW\GLFW\include">
-      <UniqueIdentifier>{20294b8a-22ed-432d-b32c-9939bd3ca346}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Libs\GLFW\GLFW\include\EGL">
-      <UniqueIdentifier>{d7e4a108-afe2-4584-be60-c82834496a81}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Libs\GLFW\GLFW\include\GL">
-      <UniqueIdentifier>{0a7aa748-8ff6-4eb4-9fbb-3c2a2cb07a14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Libs\GLFW\GLFW\lib">
-      <UniqueIdentifier>{481309c6-0348-4256-9ef2-4f9de2ba3e9e}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Libs\MathLib\include\Constants.h">
@@ -278,9 +260,6 @@
     </ClInclude>
     <ClInclude Include="DLink.h">
       <Filter>Source Files\ManagerBaseClasses</Filter>
-    </ClInclude>
-    <ClInclude Include="Trace.h">
-      <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="TextureMan.h">
       <Filter>Source Files\Graphics\Texture</Filter>
@@ -337,9 +316,6 @@
       <Filter>Libs\PCSTree\include</Filter>
     </ClInclude>
     <ClInclude Include="Libs\PCSTree\include\PCSTreeReverseIterator.h">
-      <Filter>Libs\PCSTree\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\PCSTree\include\Trace.h">
       <Filter>Libs\PCSTree\include</Filter>
     </ClInclude>
     <ClInclude Include="NullModel.h">
@@ -507,44 +483,44 @@
     <ClInclude Include="CamVals.h">
       <Filter>Source Files\Animation\CamAnim</Filter>
     </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\glfw3.h">
-      <Filter>Libs\GLFW\GLFW\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\glfw3native.h">
-      <Filter>Libs\GLFW\GLFW\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\glfw_config.h">
-      <Filter>Libs\GLFW\GLFW\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\internal.h">
-      <Filter>Libs\GLFW\GLFW\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\wgl_platform.h">
-      <Filter>Libs\GLFW\GLFW\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\win32_platform.h">
-      <Filter>Libs\GLFW\GLFW\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\EGL\eglext.h">
-      <Filter>Libs\GLFW\GLFW\include\EGL</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\GL\gl3w.h">
-      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\GL\glcorearb.h">
-      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\GL\glext.h">
-      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\GL\glxext.h">
-      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
-    </ClInclude>
-    <ClInclude Include="Libs\GLFW\include\GL\wglext.h">
-      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
-    </ClInclude>
     <ClInclude Include="Libs\FileSystem\include\File.h">
       <Filter>Libs\Filesystem\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\EGL\eglext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\glfw3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\glfw3native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\glfw_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\GL\gl3w.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\GL\glcorearb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\GL\glext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\GL\glxext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\GL\wglext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\wgl_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\GLFW\include\win32_platform.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -557,9 +533,7 @@
     <Library Include="Libs\MathLib\lib\MathEngineDebug.lib">
       <Filter>Libs\MathLib\lib</Filter>
     </Library>
-    <Library Include="Libs\GLFW\lib\GLFWDebug.lib">
-      <Filter>Libs\GLFW\GLFW\lib</Filter>
-    </Library>
+    <Library Include="Libs\GLFW\lib\GLFWDebug.lib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Libs\FileSystem\lib\FileSystemDebug.pdb">
@@ -641,9 +615,7 @@
     <None Include="shapeDefoLight.fs.glsc">
       <Filter>Source Files\Shader\renderPipelines\skinShapeDefo\skinShapeDefoLight</Filter>
     </None>
-    <None Include="Libs\GLFW\lib\GLFWDebug.pdb">
-      <Filter>Libs\GLFW\GLFW\lib</Filter>
-    </None>
+    <None Include="Libs\GLFW\lib\GLFWDebug.pdb" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

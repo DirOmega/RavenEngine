@@ -16,6 +16,9 @@
     <Filter Include="Libs">
       <UniqueIdentifier>{3a21ee41-2601-4380-a1f9-1f45a2c7961e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="HeaderOnlyLibs">
+      <UniqueIdentifier>{23c481a4-cba5-44cc-afaa-f8069e33b508}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -23,6 +26,9 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Trace.h">
+      <Filter>HeaderOnlyLibs</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

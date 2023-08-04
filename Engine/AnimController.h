@@ -1871,8 +1871,8 @@ public:
 		}
 	}
 
-	//void CProcessAnimation(const Time&)
-	void CProcessAnimation(const float deltaT)
+	void CProcessAnimation(const Time& deltaTime)
+	//void CProcessAnimation(const float deltaT)
 	{
 		//shapeBlend(internalTime, pCurShapeClip);
 //		pTestcompute->Dispatch();
@@ -1880,7 +1880,7 @@ public:
 
 		//processAnimHelper(Time(Time::ZERO), pCurClip);
 
-		Time deltaTime = deltaT * Time(Time::NTSC_30_FRAME);
+		//Time deltaTime = deltaT * Time(Time::NTSC_30_FRAME);
 		Time maxTime;
 
 		SetAnimationPose(deltaTime);

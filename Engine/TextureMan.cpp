@@ -402,10 +402,12 @@ bool TextureMan::privLoadPNGTexture(const char *szFileName, GLint minFilter, GLi
 	File::Read(fh, &w, sizeof(int));
 	File::Read(fh, &h, sizeof(int));
 
-	int* image = new int[w*h * 4];
+	auto intsize = sizeof(int);
+	auto arraysize = w * h * 4;
 
-	File::Read(fh, image, w * h * 4);
+	int* image = new int[arraysize];
 
+	File::Read(fh, image, arraysize);
 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, (GLint)wrapMode);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, (GLint)wrapMode);
@@ -432,7 +434,6 @@ bool TextureMan::privLoadPNGTexture(const char *szFileName, GLint minFilter, GLi
 		glGenerateMipmap(GL_TEXTURE_2D);
 
 	return true;
-
 }
 
 

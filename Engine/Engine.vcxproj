@@ -106,7 +106,6 @@
     <ClInclude Include="Libs\PCSTree\include\PCSTreeForwardIterator.h" />
     <ClInclude Include="Libs\PCSTree\include\PCSTreeIterator.h" />
     <ClInclude Include="Libs\PCSTree\include\PCSTreeReverseIterator.h" />
-    <ClInclude Include="Libs\PCSTree\include\Trace.h" />
     <ClInclude Include="Libs\Time\Time.h" />
     <ClInclude Include="Libs\Time\Timer.h" />
     <ClInclude Include="MDLLoader.h" />
@@ -131,7 +130,6 @@
     <ClInclude Include="TextureMan.h" />
     <ClInclude Include="TGALoader.h" />
     <ClInclude Include="ToonShader.h" />
-    <ClInclude Include="Trace.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libs\FileSystem\lib\FileSystemDebug.lib" />
@@ -235,6 +233,11 @@
     <Image Include="Rocks.tga" />
     <Image Include="Stone.tga" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EngineLibs\EngineLibs.vcxproj">
+      <Project>{0e39afed-b3c1-49a9-9c03-9238c7bc651f}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{BDD29F1A-A412-49AB-BCA5-4ABDE972CCD0}</ProjectGuid>
@@ -332,7 +335,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\Libs\PicoPNG\lib;.\Libs\PicoPNG\include;.\Libs\PCSTree\lib;.\Libs\PCSTree\include;.\Libs\GLFW\include\GL;.\Libs\Time\;.\Libs\GLFW\include\EGL;.\Libs\GLFW\include;.\Libs\MemSystem\include;.\Libs\MathLib\include;.\Libs\AudioEngine\include;.\Libs\FileSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\EngineLibs;.\Libs\PicoPNG\lib;.\Libs\PicoPNG\include;.\Libs\PCSTree\lib;.\Libs\PCSTree\include;.\Libs\GLFW\include\GL;.\Libs\Time\;.\Libs\GLFW\include\EGL;.\Libs\GLFW\include;.\Libs\MemSystem\include;.\Libs\MathLib\include;.\Libs\AudioEngine\include;.\Libs\FileSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <StringPooling>false</StringPooling>
@@ -431,7 +434,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)_CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\Libs\picoPNG\lib;.\Libs\picoPNG\include;.\Libs\PCSTree\lib;.\Libs\PCSTree\include;.\Libs\GLFW\include\GL;.\Libs\Time\;.\Libs\GLFW\include\EGL;.\Libs\GLFW\include;.\Libs\MemSystem\include;.\Libs\MathLib\include;.\Libs\FileSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\EngineLibs;.\Libs\picoPNG\lib;.\Libs\picoPNG\include;.\Libs\PCSTree\lib;.\Libs\PCSTree\include;.\Libs\GLFW\include\GL;.\Libs\Time\;.\Libs\GLFW\include\EGL;.\Libs\GLFW\include;.\Libs\MemSystem\include;.\Libs\MathLib\include;.\Libs\FileSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <StringPooling>false</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -444,6 +447,15 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+      <HeapReserveSize>
+      </HeapReserveSize>
+      <HeapCommitSize>
+      </HeapCommitSize>
+      <StackReserveSize>
+      </StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

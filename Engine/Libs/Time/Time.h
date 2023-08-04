@@ -17,7 +17,7 @@ public:
 		// For constructing one NTSC 60 hz frame of Time.
 		NTSC_FRAME,
 
-		// For constructing one NTSC 60 hz frame of Time. 
+		// For constructing one NTSC 30 hz frame of Time. 
 		NTSC_30_FRAME,
 
 		// For constructing one PAL 50 hz frame of Time. 
