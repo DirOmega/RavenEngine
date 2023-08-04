@@ -1,0 +1,15 @@
+C:\Sandbox\Personal\RavenEngine\Engine\Libs\Time\Timer_win32.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\Timer_win32.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\Actor.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\Actor.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\AudioBufferManager.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\AudioBufferManager.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\AudioEngine.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\AudioEngine.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\AudioMain.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\AudioMain.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\CircularData.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\CircularData.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\Handle.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\Handle.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\HandleMan.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\HandleMan.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\LoadManager.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\LoadManager.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\PriorityManager.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\PriorityManager.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\Snd.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\Snd.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\SndManager.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\SndManager.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\SourceVoiceManager.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\SourceVoiceManager.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\TimerEventManager.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\TimerEventManager.obj
+C:\Sandbox\Personal\RavenEngine\AudioEngine\XAudio2Chunk.cpp;C:\Sandbox\Personal\RavenEngine\AudioEngine\Release\XAudio2Chunk.obj

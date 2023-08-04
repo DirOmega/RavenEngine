@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\DebugCube">
+      <UniqueIdentifier>{ef67c78d-126b-4a8e-ab51-ef78718eda73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pryamid">
+      <UniqueIdentifier>{999f9936-9e89-4ae5-b9fb-3eb6d4c79610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DiamondThingy">
+      <UniqueIdentifier>{c07381a4-df2e-4469-b513-961262466752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NoIdea">
+      <UniqueIdentifier>{d54a1bd1-d6ab-42f6-bc29-abf44aada8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera">
+      <UniqueIdentifier>{8a02c670-f64e-4403-8b4a-16e72c85753a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Plane">
+      <UniqueIdentifier>{a8c391e2-eb6c-4407-89e5-107468cee1df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ModelFileWriterTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugCube.cpp">
+      <Filter>Header Files\DebugCube</Filter>
+    </ClCompile>
+    <ClCompile Include="pryamid.cpp">
+      <Filter>Header Files\Pryamid</Filter>
+    </ClCompile>
+    <ClCompile Include="diamond.cpp">
+      <Filter>Header Files\DiamondThingy</Filter>
+    </ClCompile>
+    <ClCompile Include="NoIdea.cpp">
+      <Filter>Header Files\NoIdea</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicCube.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BSphere.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Header Files\Plane</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="FileSystem\lib\FileSystemRelease.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ModelStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugCube.h">
+      <Filter>Header Files\DebugCube</Filter>
+    </ClInclude>
+    <ClInclude Include="Pryamid.h">
+      <Filter>Header Files\Pryamid</Filter>
+    </ClInclude>
+    <ClInclude Include="diamond.h">
+      <Filter>Header Files\DiamondThingy</Filter>
+    </ClInclude>
+    <ClInclude Include="NoIdea.h">
+      <Filter>Header Files\NoIdea</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicCube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BSphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Header Files\Plane</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,79 @@
+// TEXTURE RENDER - Skin Vertex Shader
+#version 400 core
+
+uniform mat4 view_matrix;
+uniform mat4 proj_matrix;
+
+uniform mat4 boneMats[200];
+//uniform mat4 bindPose[80];
+
+layout (std140) uniform light
+{
+	vec4 vColor;
+	vec3 vLightPos;
+};
+
+layout (std140) uniform bindArray
+{
+	mat4 bindPose[200];
+};
+
+// location is set 
+layout (location = 0) in vec4 position;
+layout (location = 1) in vec2 tc;
+layout (location = 2) in vec3 normal;
+
+layout (location = 3) in vec4 weights;
+layout (location = 4) in ivec4 BoneIndex;
+
+out VS_OUT
+{
+	vec4 vFragColor;
+    vec2 textCoordinate;
+} vs_out;
+
+out vec3 newNormal;
+out vec4 newVertex;
+
+void main(void)
+{
+
+	newVertex = boneMats[BoneIndex.x] * bindPose[BoneIndex.x] * position * weights.x +
+				boneMats[BoneIndex.y] * bindPose[BoneIndex.y] * position * weights.y +
+				boneMats[BoneIndex.z] * bindPose[BoneIndex.z] * position * weights.z +
+				boneMats[BoneIndex.w] * bindPose[BoneIndex.w] * position * weights.w;
+
+	mat4 mvMatrix = boneMats[BoneIndex.x] * bindPose[BoneIndex.x] * weights.x +
+					boneMats[BoneIndex.y] * bindPose[BoneIndex.y] * weights.y +
+					boneMats[BoneIndex.z] * bindPose[BoneIndex.z] * weights.z +
+					boneMats[BoneIndex.w] * bindPose[BoneIndex.w] * weights.w ;
+
+					
+	gl_Position = proj_matrix * view_matrix  * vec4(newVertex.xyz,1.0f);
+
+	mat3 mNormMat;
+	mNormMat[0] = mvMatrix[0].xyz;
+	mNormMat[1] = mvMatrix[1].xyz;
+	mNormMat[2] = mvMatrix[2].xyz;
+
+	newVertex = view_matrix * newVertex;
+	newNormal = normalize(mNormMat * normal);
+
+					
+	//newNormal = normal;
+	
+	// Get vLightDir
+		//vec4 ecPosition = view_matrix * newVertex;
+		//vec3 ecPosition3 = ecPosition.xyz / ecPosition.w;
+		//vec3 vLightDir = normalize(vLightPos - ecPosition3);
+
+	// Get vFragColor
+		//float fDot = max(0.0, dot(newNormal, vLightDir)); 
+		//vs_out.vFragColor.rgb = vColor.rgb * fDot;
+		//vs_out.vFragColor.a = vColor.a;
+
+    vs_out.textCoordinate = tc;
+
+
+
+}

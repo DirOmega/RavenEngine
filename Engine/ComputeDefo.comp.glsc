@@ -1,0 +1,50 @@
+#version 430 core
+
+layout(local_size_x = 128, local_size_y = 1, local_size_z = 1) in;
+
+layout (location=1) uniform float[16] test;
+
+layout(std140,binding = 0) buffer outputMesh
+{
+	vec4 outVerts[];
+} outMesh;
+
+layout(std140, binding = 1) buffer data
+{
+	int numVerts;
+	int numShapes;
+
+} blendData;
+
+layout(std140, binding = 2)  buffer bD
+{
+	float shapeWeights[16];
+} bWeights;
+
+
+layout(std140, binding = 3) buffer inputMesh
+{
+	vec4 bVerts[];
+} basis;
+
+layout(std140, binding = 4) buffer BS0
+{
+	vec4 verts[];
+} BlendShapes;
+
+void main(void)
+{
+	unsigned int gid = gl_GlobalInvocationID.x;
+		
+		if(gid < blendData.numVerts)
+		{
+		vec4 blendedVert = basis.bVerts[gid];
+		
+		for(int i = 0; i <= blendData.numShapes; i++)
+		{ //TODO:: scale the weights in the converter
+			blendedVert += (BlendShapes.verts[gid+(i*blendData.numVerts)] - basis.bVerts[gid]) *  test[i] * 0.01;
+		}
+
+		outMesh.outVerts[gid] = blendedVert;
+		}
+}

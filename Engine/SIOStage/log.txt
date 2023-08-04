@@ -1,0 +1,153 @@
+Autodesk FBX SDK version 2018.1.1 Release (246450)
+
+
+File: SIOLv7.fbx
+
+FBX file format version for this FBX SDK is 7.5.0
+FBX file format version for file 'SIOLv7.fbx' is 7.4.0
+
+Animation Stack Information
+    Number of Animation Stacks: 0
+    Current Animation Stack: ""
+
+_Lights
+     DownSpots
+          Spot.043
+          Spot.038
+          Spot.042
+          Spot.040
+          Spot.041
+          Spot.039
+          Spot.037
+          Spot.036
+          Spot.035
+          Spot.002
+          Spot.001
+          Spot
+          Spot.003
+          Spot.004
+          Spot.005
+          Spot.006
+          Spot.007
+          Spot.008
+          Spot.009
+          Spot.010
+          Spot.011
+          Spot.057
+          Spot.056
+          Spot.055
+          Spot.054
+          Spot.053
+          Spot.052
+          Spot.051
+          Spot.050
+          Spot.049
+          Spot.048
+          Spot.047
+          Spot.046
+          Spot.045
+          Spot.044
+          Spot.034
+          Spot.032
+          Spot.030
+          Spot.031
+          Spot.029
+          Spot.028
+          Spot.027
+          Spot.026
+          Spot.025
+          Spot.024
+          Spot.023
+          Spot.022
+          Spot.021
+          Spot.020
+          Spot.019
+          Spot.018
+          Spot.017
+          Spot.016
+          Spot.015
+          Spot.014
+          Spot.033
+     upSpots
+          Spot.012
+          Spot.013
+_ApartmentBaked
+     Ceiling
+     floor
+     Wall0
+     Wall1
+     MetalArt
+          NoteNoTexture.001
+     Wall2
+     PlasterAcc
+     Wall3
+     Shelf
+          NoteNoTexture
+     WindowFrame
+          NoteNoTexture.002
+     ClockFrame
+          NoteNoTexture.003
+     Glow0
+          NoteNoTextureNeedGlow
+     ClockMark
+     00M_Vase Base
+     Painting0
+     Painting3
+     ClockBackWhite
+     ClockBack
+     Painting1
+LFixG
+WallSconceG
+LampG
+LampFrame
+LampStand
+Glow2
+LightFix2Glow
+Sconces
+LFix
+Vase
+Painting4
+Painting2
+Glass
+006_材質10
+Points
+     Point5
+     Point4
+     Point3
+     Point2
+     Point1
+     Point0
+Count = 331
+Count = 28
+Count = 12
+Count = 12
+Count = 2159
+Count = 12
+Count = 7632
+Count = 12
+Count = 4136
+Count = 5678
+Count = 1077
+Count = 35231
+Count = 144
+Count = 84315
+Count = 12
+Count = 12
+Count = 12
+Count = 12
+Count = 12
+Count = 2184
+Count = 1728
+Count = 3168
+Count = 1520
+Count = 48072
+Count = 4368
+Count = 816
+Count = 6240
+Count = 78048
+Count = 23640
+Count = 12
+Count = 12
+Count = 1916
+Count = 12
+Program Success!

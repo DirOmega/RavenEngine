@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OldDebug|Win32">
+      <Configuration>OldDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OldDebug|x64">
+      <Configuration>OldDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Anim.h" />
+    <ClInclude Include="AnimController.h" />
+    <ClInclude Include="CamAnimController.h" />
+    <ClInclude Include="CamVals.h" />
+    <ClInclude Include="ComputeShaderObject.h" />
+    <ClInclude Include="ComputeShaderTest.h" />
+    <ClInclude Include="GameObjectSkinned.h" />
+    <ClInclude Include="GraphicsObjectSkinLight.h" />
+    <ClInclude Include="GraphicsObject_DoubleSidedTexture.h" />
+    <ClInclude Include="GraphicsObject_SkinFT.h" />
+    <ClInclude Include="GraphicsObject_SkinShapeDefo.h" />
+    <ClInclude Include="GraphicsObject_SkinShapeDefoLit.h" />
+    <ClInclude Include="Libs\AudioEngine\include\AudioInclude.h" />
+    <ClInclude Include="baseManager.h" />
+    <ClInclude Include="BoundingBoxModel.h" />
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraLink.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="CameraModel.h" />
+    <ClInclude Include="ChunkHeader.h" />
+    <ClInclude Include="CollisionObject.h" />
+    <ClInclude Include="constColor.h" />
+    <ClInclude Include="CubeModel.h" />
+    <ClInclude Include="CubeModelDebugTex.h" />
+    <ClInclude Include="DLink.h" />
+    <ClInclude Include="eat.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="FrameBucket.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectAnim.h" />
+    <ClInclude Include="GameObjectMan.h" />
+    <ClInclude Include="GameObjectRigid.h" />
+    <ClInclude Include="GLibSetup.h" />
+    <ClInclude Include="GraphicsObject.h" />
+    <ClInclude Include="GraphicsObject_CycleTextureLight.h" />
+    <ClInclude Include="GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="GraphicsObject_FlatTexture.h" />
+    <ClInclude Include="GraphicsObject_Null.h" />
+    <ClInclude Include="GraphicsObject_TextureLight.h" />
+    <ClInclude Include="GraphicsObject_Wireframe.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="JoyStickEnum.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="KeyEnum.h" />
+    <ClInclude Include="Libs\AudioEngine\include\CircularData.h" />
+    <ClInclude Include="Libs\AudioEngine\include\CircularIndex.h" />
+    <ClInclude Include="Libs\AudioEngine\include\LoadManager.h" />
+    <ClInclude Include="Libs\AudioEngine\include\SndManager.h" />
+    <ClInclude Include="Libs\FileSystem\include\File.h" />
+    <ClInclude Include="Libs\GLFW\include\EGL\eglext.h" />
+    <ClInclude Include="Libs\GLFW\include\glfw3.h" />
+    <ClInclude Include="Libs\GLFW\include\glfw3native.h" />
+    <ClInclude Include="Libs\GLFW\include\glfw_config.h" />
+    <ClInclude Include="Libs\GLFW\include\GL\gl3w.h" />
+    <ClInclude Include="Libs\GLFW\include\GL\glcorearb.h" />
+    <ClInclude Include="Libs\GLFW\include\GL\glext.h" />
+    <ClInclude Include="Libs\GLFW\include\GL\glxext.h" />
+    <ClInclude Include="Libs\GLFW\include\GL\wglext.h" />
+    <ClInclude Include="Libs\GLFW\include\internal.h" />
+    <ClInclude Include="Libs\GLFW\include\wgl_platform.h" />
+    <ClInclude Include="Libs\GLFW\include\win32_platform.h" />
+    <ClInclude Include="Libs\MathLib\include\Align16.h" />
+    <ClInclude Include="Libs\MathLib\include\Constants.h" />
+    <ClInclude Include="Libs\MathLib\include\Enum.h" />
+    <ClInclude Include="Libs\MathLib\include\MathApp.h" />
+    <ClInclude Include="Libs\MathLib\include\MathEngine.h" />
+    <ClInclude Include="Libs\MathLib\include\Matrix.h" />
+    <ClInclude Include="Libs\MathLib\include\Quat.h" />
+    <ClInclude Include="Libs\MathLib\include\QuatApp.h" />
+    <ClInclude Include="Libs\MathLib\include\Util.h" />
+    <ClInclude Include="Libs\MathLib\include\Vect.h" />
+    <ClInclude Include="Libs\MathLib\include\VectApp.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Libs\PCSTree\include\PCSNode.h" />
+    <ClInclude Include="Libs\PCSTree\include\PCSTree.h" />
+    <ClInclude Include="Libs\PCSTree\include\PCSTreeForwardIterator.h" />
+    <ClInclude Include="Libs\PCSTree\include\PCSTreeIterator.h" />
+    <ClInclude Include="Libs\PCSTree\include\PCSTreeReverseIterator.h" />
+    <ClInclude Include="Libs\PCSTree\include\Trace.h" />
+    <ClInclude Include="Libs\Time\Time.h" />
+    <ClInclude Include="Libs\Time\Timer.h" />
+    <ClInclude Include="MDLLoader.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelFromFile.h" />
+    <ClInclude Include="ModelLink.h" />
+    <ClInclude Include="ModelMan.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="MouseBTNEnum.h" />
+    <ClInclude Include="NullModel.h" />
+    <ClInclude Include="OldFSandVSSource.h" />
+    <ClInclude Include="PackageHeader.h" />
+    <ClInclude Include="PyramidModel.h" />
+    <ClInclude Include="ScratchSpace.h" />
+    <ClInclude Include="ShaderLink.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="ShaderObject.h" />
+    <ClInclude Include="skinLightShader.vs.glsc" />
+    <ClInclude Include="SkinnedModelFromFile.h" />
+    <ClInclude Include="TexLink.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureMan.h" />
+    <ClInclude Include="TGALoader.h" />
+    <ClInclude Include="ToonShader.h" />
+    <ClInclude Include="Trace.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\FileSystem\lib\FileSystemDebug.lib" />
+    <Library Include="Libs\GLFW\lib\GLFWDebug.lib" />
+    <Library Include="Libs\MathLib\lib\MathEngineDebug.lib" />
+    <Library Include="Libs\PCSTree\lib\PCSTreeDebug.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="colorRender.fs.glsc" />
+    <None Include="colorRender.vs.glsc" />
+    <None Include="ComputeDefo.comp.glsc" />
+    <None Include="ComputeShader.comp.glsc" />
+    <None Include="cubeModelTex.mdl" />
+    <None Include="Libs\FileSystem\lib\FileSystemDebug.pdb" />
+    <None Include="Libs\GLFW\lib\GLFWDebug.pdb" />
+    <None Include="Libs\MathLib\lib\MathEngineDebug.pdb" />
+    <None Include="Libs\PCSTree\lib\PCSTreeDebug.pdb" />
+    <None Include="nullRender.fs.glsc" />
+    <None Include="nullRender.vs.glsc" />
+    <None Include="shapeDefoLight.fs.glsc" />
+    <None Include="shapeDefoLight.vs.glsc" />
+    <None Include="skinLightShader.fs.glsc" />
+    <None Include="skinShader.fs.glsc" />
+    <None Include="skinShader.vs.glsc" />
+    <None Include="skinShaderWBT.fs.glsc" />
+    <None Include="skinShaderWBT.vs.glsc" />
+    <None Include="skinShapeDefo.fs.glsc" />
+    <None Include="skinShapeDefo.vs.glsc" />
+    <None Include="skinShapeDefoWBT.fs.glsc" />
+    <None Include="skinShapeDefoWBT.vs.glsc" />
+    <None Include="texturePointLightDiff.fs.glsc" />
+    <None Include="texturePointLightDiff.vs.glsc" />
+    <None Include="textureRender.fs.glsc" />
+    <None Include="textureRender.vs.glsc" />
+    <None Include="toonshading.fs.glsc" />
+    <None Include="toonshading.vs.glsc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Anim.cpp" />
+    <ClCompile Include="Anim2Bone.cpp" />
+    <ClCompile Include="AnimController.cpp" />
+    <ClCompile Include="baseManager.cpp" />
+    <ClCompile Include="BoundingSphere.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraLink.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="CameraModel.cpp" />
+    <ClCompile Include="ComputeShaderObject.cpp" />
+    <ClCompile Include="ConstColor.cpp" />
+    <ClCompile Include="CubeModel.cpp" />
+    <ClCompile Include="CubeModelDebugTex.cpp" />
+    <ClCompile Include="DLink.cpp" />
+    <ClCompile Include="eat.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectAnim.cpp" />
+    <ClCompile Include="GameObjectMan.cpp" />
+    <ClCompile Include="GameObjectRigid.cpp" />
+    <ClCompile Include="GraphicsObject.cpp" />
+    <ClCompile Include="GraphicsObjectSkinLight.cpp" />
+    <ClCompile Include="GraphicsObject_ColorByPosition.cpp" />
+    <ClCompile Include="GraphicsObject_CycleTextureLight.cpp" />
+    <ClCompile Include="GraphicsObject_DoubleSidedTexture.cpp" />
+    <ClCompile Include="GraphicsObject_FlatTexture.cpp" />
+    <ClCompile Include="GraphicsObject_Null.cpp" />
+    <ClCompile Include="GraphicsObject_SkinFT.cpp" />
+    <ClCompile Include="GraphicsObject_SkinShapeDefo.cpp" />
+    <ClCompile Include="GraphicsObject_SkinShapeDefoLit.cpp" />
+    <ClCompile Include="GraphicsObject_TextureLight.cpp" />
+    <ClCompile Include="GraphicsObject_Wireframe.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Libs\Time\Time.cpp" />
+    <ClCompile Include="Libs\Time\Timer.cpp" />
+    <ClCompile Include="Libs\Time\Timer_win32.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Game.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4201;4668;4710;4514; 5039</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='OldDebug|Win32'">4201;4668;4710;4514; 5039</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelFromFile.cpp" />
+    <ClCompile Include="ModelLink.cpp" />
+    <ClCompile Include="ModelMan.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="NullModel.cpp" />
+    <ClCompile Include="PyramidModel.cpp" />
+    <ClCompile Include="ScratchSpace.cpp" />
+    <ClCompile Include="ShaderLink.cpp" />
+    <ClCompile Include="ShaderObject.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="SkinnedModelFromFile.cpp" />
+    <ClCompile Include="TexLink.cpp" />
+    <ClCompile Include="TextureMan.cpp" />
+    <ClCompile Include="ToonShader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CubeTest.tga" />
+    <Image Include="Duckweed.tga" />
+    <Image Include="RedBrick.tga" />
+    <Image Include="Rocks.tga" />
+    <Image Include="Stone.tga" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{BDD29F1A-A412-49AB-BCA5-4ABDE972CCD0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Libs\PicoPNG\lib;.\Libs\PicoPNG\include;.\Libs\PCSTree\lib;.\Libs\PCSTree\include;.\Libs\GLFW\include\GL;.\Libs\Time\;.\Libs\GLFW\include\EGL;.\Libs\GLFW\include;.\Libs\MemSystem\include;.\Libs\MathLib\include;.\Libs\AudioEngine\include;.\Libs\FileSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4201;4668;4710;4514; 5039</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <EnableUAC>true</EnableUAC>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <HeapReserveSize>
+      </HeapReserveSize>
+      <HeapCommitSize>
+      </HeapCommitSize>
+      <StackReserveSize>
+      </StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Libs\PicoPNG\lib;.\Libs\PicoPNG\include;.\Libs\PCSTree\lib;.\Libs\PCSTree\include;.\Libs\GLFW\include\GL;.\Libs\Time\;.\Libs\GLFW\include\EGL;.\Libs\GLFW\include;.\Libs\MemSystem\include;.\Libs\MathLib\include;.\Libs\AudioEngine\include;.\Libs\FileSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4201;4668;4710;4514; 5039</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <EnableUAC>true</EnableUAC>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <HeapReserveSize>256</HeapReserveSize>
+      <HeapCommitSize>256</HeapCommitSize>
+      <StackReserveSize>512</StackReserveSize>
+      <StackCommitSize>64</StackCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OldDebug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)_CRT_SECURE_NO_WARNINGS;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Libs\picoPNG\lib;.\Libs\picoPNG\include;.\Libs\PCSTree\lib;.\Libs\PCSTree\include;.\Libs\GLFW\include\GL;.\Libs\Time\;.\Libs\GLFW\include\EGL;.\Libs\GLFW\include;.\Libs\MemSystem\include;.\Libs\MathLib\include;.\Libs\FileSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4201;4668;4710;4514; 5039;4711;4738</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

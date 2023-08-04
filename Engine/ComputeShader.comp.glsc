@@ -1,0 +1,30 @@
+#version 430 core
+
+layout(local_size_x = 128, local_size_y = 1, local_size_z = 1) in;
+
+layout(std140,binding = 0) buffer outputMesh
+{
+	vec4 outVerts[];
+} outMesh;
+
+layout(std140, binding = 1) buffer data
+{
+	unsigned int numVerts;
+
+} meshData;
+
+layout(std140, binding = 2) buffer inputMesh
+{
+	vec4 inVerts[];
+} inMesh;
+
+
+void main(void)
+{
+	unsigned int gid = gl_GlobalInvocationID.x;
+		
+		if(gid < meshData.numVerts)
+		{
+		outMesh.outVerts[gid] = inMesh.inVerts[gid];
+		}
+}

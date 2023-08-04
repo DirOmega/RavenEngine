@@ -1,0 +1,16 @@
+﻿  Timer_win32.cpp
+  Actor.cpp
+  AudioBufferManager.cpp
+  AudioEngine.cpp
+  AudioMain.cpp
+  CircularData.cpp
+  Handle.cpp
+  HandleMan.cpp
+  LoadManager.cpp
+  PriorityManager.cpp
+  Snd.cpp
+  SndManager.cpp
+  SourceVoiceManager.cpp
+  TimerEventManager.cpp
+  XAudio2Chunk.cpp
+  AudioEngine.vcxproj -> C:\Sandbox\Personal\RavenEngine\Release\AudioEngine.lib

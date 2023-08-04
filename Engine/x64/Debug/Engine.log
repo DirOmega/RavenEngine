@@ -1,0 +1,101 @@
+﻿  Anim.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\anim.h(4): fatal error C1083: Cannot open include file: 'Timer.h': No such file or directory
+  Anim2Bone.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  baseManager.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): error C2664: 'void OutputDebugStringW(LPCWSTR)': cannot convert argument 1 from 'char [256]' to 'LPCWSTR'
+  o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  BoundingSphere.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\boundingsphere.cpp(2): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  Camera.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\camera.h(3): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  CameraLink.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\camera.h(3): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  CameraManager.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): error C2664: 'void OutputDebugStringW(LPCWSTR)': cannot convert argument 1 from 'char [256]' to 'LPCWSTR'
+  o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\cameramanager.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  CameraModel.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ConstColor.cpp
+  CubeModel.cpp
+  CubeModelDebugTex.cpp
+  DLink.cpp
+  eat.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): error C2664: 'void OutputDebugStringW(LPCWSTR)': cannot convert argument 1 from 'char [256]' to 'LPCWSTR'
+  o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\eat.cpp(8): fatal error C1083: Cannot open include file: 'File.h': No such file or directory
+  Engine.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  GameObject.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\gameobject.h(3): fatal error C1083: Cannot open include file: 'PCSNode.h': No such file or directory
+  GameObjectAnim.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\anim.h(4): fatal error C1083: Cannot open include file: 'Timer.h': No such file or directory
+  GameObjectMan.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  GameObjectRigid.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\gameobjectrigid.cpp(4): fatal error C1083: Cannot open include file: 'PCSNode.h': No such file or directory
+  GraphicsObject.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  GraphicsObjectSkinLight.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  Generating Code...
+  Compiling...
+  GraphicsObject_ColorByPosition.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject_colorbyposition.cpp(2): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  GraphicsObject_CycleTextureLight.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  GraphicsObject_FlatTexture.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  GraphicsObject_Null.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  GraphicsObject_SkinFT.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  GraphicsObject_TextureLight.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  GraphicsObject_Wireframe.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\graphicsobject.h(4): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  InputManager.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  Keyboard.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  Time.cpp
+  Timer.cpp
+  Timer_win32.cpp
+  Main.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\game.h(3): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  Game.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\game.h(3): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  Model.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ModelFromFile.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ModelLink.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ModelMan.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  Mouse.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\game.h(3): fatal error C1083: Cannot open include file: 'MathEngine.h': No such file or directory
+  NullModel.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  Generating Code...
+  Compiling...
+  PyramidModel.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ScratchSpace.cpp
+  ShaderLink.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ShaderObject.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ShaderManager.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): error C2664: 'void OutputDebugStringW(LPCWSTR)': cannot convert argument 1 from 'char [256]' to 'LPCWSTR'
+  o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\trace.h(41): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(14): fatal error C1083: Cannot open include file: 'gl3w.h': No such file or directory
+  SkinnedModelFromFile.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  TexLink.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  TextureMan.cpp
+o:\perforce\keenan2018spring_gam576\student\rcole8\engine\engine\glibsetup.h(10): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+  ToonShader.cpp
+  Generating Code...

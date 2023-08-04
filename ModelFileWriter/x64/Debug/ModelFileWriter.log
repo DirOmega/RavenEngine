@@ -1,0 +1,12 @@
+﻿  BasicCube.cpp
+  BSphere.cpp
+  DebugCube.cpp
+  diamond.cpp
+  ModelFileWriterTool.cpp
+  NoIdea.cpp
+  pryamid.cpp
+  Generating Code...
+ModelFileWriterTool.obj : error LNK2019: unresolved external symbol "public: static enum File::Error __cdecl File::Open(void * &,char const * const,enum File::Mode)" (?Open@File@@SA?AW4Error@1@AEAPEAXQEBDW4Mode@1@@Z) referenced in function main
+ModelFileWriterTool.obj : error LNK2019: unresolved external symbol "public: static enum File::Error __cdecl File::Close(void * &)" (?Close@File@@SA?AW4Error@1@AEAPEAX@Z) referenced in function main
+ModelFileWriterTool.obj : error LNK2019: unresolved external symbol "public: static enum File::Error __cdecl File::Write(void * &,void const * const,unsigned __int64)" (?Write@File@@SA?AW4Error@1@AEAPEAXQEBX_K@Z) referenced in function main
+O:\Perforce\keenan2018spring_gam576\student\rcole8\Engine\x64\Debug\ModelFileWriter.exe : fatal error LNK1120: 3 unresolved externals

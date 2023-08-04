@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Snd">
+      <UniqueIdentifier>{6783fe86-d70b-4840-abb2-a670f183ddee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Snd\Management">
+      <UniqueIdentifier>{41436caa-d6d8-49da-aaed-279eed7ac92c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircularData">
+      <UniqueIdentifier>{81c3709f-2543-4dff-a147-b3bfa06c3820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{e1187c83-c7e0-4a91-8833-30d81aed3a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Trace">
+      <UniqueIdentifier>{c4fe02b6-c0d3-4983-b2e2-18c72bf95c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Loading">
+      <UniqueIdentifier>{ca9e1434-0576-4a56-862b-3ee5defbb6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timing">
+      <UniqueIdentifier>{df4ba7e9-93d4-41fb-bb07-9e7999c5804b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="baseClasses">
+      <UniqueIdentifier>{6b435be3-791b-449a-97e6-978015612c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="baseClasses\baseManager">
+      <UniqueIdentifier>{d901a23b-b154-4f6c-bc1e-bfde0f6cb173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="baseClasses\DLink">
+      <UniqueIdentifier>{f007002d-c03d-441f-9ce9-9929a0d93296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timing\Management">
+      <UniqueIdentifier>{134a5f65-6516-4884-8017-23dae11ebf03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{cc4207b4-496d-43f7-8f4d-63bd6521b3d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\_XAudio2">
+      <UniqueIdentifier>{8ebdc747-361b-4673-b48b-e17ed6353ddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\_XAudio2\Wrappers">
+      <UniqueIdentifier>{7c14a856-f630-4dbf-8b2a-e2265e6fe8ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AudioBuffer">
+      <UniqueIdentifier>{93443f0f-4b17-4564-acf7-c74d0362da1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AudioBuffer\Management">
+      <UniqueIdentifier>{8ee52551-a6cb-4d8f-8900-dad4304f235a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AudioMain">
+      <UniqueIdentifier>{8cca9841-463c-47fc-afa2-fefaa453083e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Snd\Registry">
+      <UniqueIdentifier>{a0bc8339-77f5-48cd-b3cb-de1feb655dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceVoice">
+      <UniqueIdentifier>{33320b8f-5a3f-4a0d-acf6-dd6075a0cc1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceVoice\Management">
+      <UniqueIdentifier>{bfd1e844-42df-4c47-a005-effe57373666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AudioEngine">
+      <UniqueIdentifier>{4a255e89-20a1-4a73-9345-50df22d2b11d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{95ec8a7e-fbca-4df6-86e8-0d8439803dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\GLFW">
+      <UniqueIdentifier>{67120ca7-ae89-4ab6-bf98-1287fa5f866c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\GLFW\GLFW">
+      <UniqueIdentifier>{261c6216-31e5-41fa-888e-32858f9a52bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\GLFW\GLFW\include">
+      <UniqueIdentifier>{f011e84d-ce12-4c31-89ce-5a51adfc7f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\GLFW\GLFW\include\EGL">
+      <UniqueIdentifier>{23c62d29-0b05-42ef-bb43-794a6358f4f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\GLFW\GLFW\include\GL">
+      <UniqueIdentifier>{9b1fa79b-be0a-4548-bbc4-750b89702dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\GLFW\GLFW\lib">
+      <UniqueIdentifier>{864ee4ae-4499-4c38-94d5-bb5fdf117048}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SndManager.h">
+      <Filter>Snd\Management</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularData.h">
+      <Filter>CircularData</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularIndex.h">
+      <Filter>CircularData</Filter>
+    </ClInclude>
+    <ClInclude Include="Trace.h">
+      <Filter>_Libs\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadManager.h">
+      <Filter>Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="baseManager.h">
+      <Filter>baseClasses\baseManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DLink.h">
+      <Filter>baseClasses\DLink</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerEventManager.h">
+      <Filter>Timing\Management</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeEvent.h">
+      <Filter>Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="XAudio2Wrapper.h">
+      <Filter>_Libs\_XAudio2\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="XAudio2Version.h">
+      <Filter>_Libs\_XAudio2\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="XAudio2Endianess.h">
+      <Filter>_Libs\_XAudio2\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioBufferManager.h">
+      <Filter>AudioBuffer\Management</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioBuffer.h">
+      <Filter>AudioBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Snd.h">
+      <Filter>Snd</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioMain.h">
+      <Filter>AudioMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\FileSystem\include\File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SndCallRegistry.h">
+      <Filter>Snd\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="XAudio2Chunk.h">
+      <Filter>_Libs\_XAudio2\Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceVoiceManager.h">
+      <Filter>SourceVoice\Management</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceVoice.h">
+      <Filter>SourceVoice</Filter>
+    </ClInclude>
+    <ClInclude Include="VoiceCallBack.h">
+      <Filter>SourceVoice</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioEngine.h">
+      <Filter>AudioEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadBuffer.h">
+      <Filter>Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCallbackManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Handle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PriorityManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceVoiceTopManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Time\include\Time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\Time\include\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\glfw3.h">
+      <Filter>Libs\GLFW\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\glfw3native.h">
+      <Filter>Libs\GLFW\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\glfw_config.h">
+      <Filter>Libs\GLFW\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\internal.h">
+      <Filter>Libs\GLFW\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\wgl_platform.h">
+      <Filter>Libs\GLFW\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\win32_platform.h">
+      <Filter>Libs\GLFW\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\EGL\eglext.h">
+      <Filter>Libs\GLFW\GLFW\include\EGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\GL\gl3w.h">
+      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\GL\glcorearb.h">
+      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\GL\glext.h">
+      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\GL\glxext.h">
+      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Libs\GLFW\include\GL\wglext.h">
+      <Filter>Libs\GLFW\GLFW\include\GL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CircularData.cpp">
+      <Filter>CircularData</Filter>
+    </ClCompile>
+    <ClCompile Include="SndManager.cpp">
+      <Filter>Snd\Management</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadManager.cpp">
+      <Filter>Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerEventManager.cpp">
+      <Filter>Timing\Management</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioBufferManager.cpp">
+      <Filter>AudioBuffer\Management</Filter>
+    </ClCompile>
+    <ClCompile Include="Snd.cpp">
+      <Filter>Snd</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioMain.cpp">
+      <Filter>AudioMain</Filter>
+    </ClCompile>
+    <ClCompile Include="XAudio2Chunk.cpp">
+      <Filter>_Libs\_XAudio2\Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceVoiceManager.cpp">
+      <Filter>SourceVoice\Management</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioEngine.cpp">
+      <Filter>AudioEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Handle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleMan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PriorityManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Libs\Time\Timer_win32.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\Time\lib\TimeDebug.lib" />
+    <Library Include="..\Engine\Libs\GLFW\lib\GLFWDebug.lib">
+      <Filter>Libs\GLFW\GLFW\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libs\Time\lib\TimeDebug.pdb" />
+    <None Include="..\Engine\Libs\GLFW\lib\GLFWDebug.pdb">
+      <Filter>Libs\GLFW\GLFW\lib</Filter>
+    </None>
+  </ItemGroup>
+</Project>

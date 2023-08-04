@@ -1,0 +1,1647 @@
+Autodesk FBX SDK version 2018.1.1 Release (246450)
+
+
+File: SIOLv7.fbx
+
+FBX file format version for this FBX SDK is 7.5.0
+FBX file format version for file 'SIOLv7.fbx' is 7.4.0
+
+Animation Stack Information
+    Number of Animation Stacks: 1
+    Current Animation Stack: "SIOL|Shake_It_Off_L_bone"
+
+    Animation Stack 0
+         Name: "SIOL|Shake_It_Off_L_bone"
+         Description: ""
+         Import Name: "SIOL|Shake_It_Off_L_bone"
+         Import State: true
+
+SIOL.001
+     temporary
+          ncc.594
+          ncc.593
+          ncc.592
+          ncc.591
+          ncc.590
+          ncc.589
+          ncc.588
+          ncc.587
+          ncc.586
+          ncc.585
+          ncc.584
+          ncc.583
+          ncc.582
+          ncc.581
+          ncc.580
+          ncc.579
+          ncc.578
+          ncc.577
+          ncc.576
+          ncc.575
+          ncc.574
+          ncc.573
+          ncc.572
+          ncc.571
+          ncc.570
+          ncc.569
+          ncc.568
+          ncc.567
+          ncc.566
+          ncc.565
+          ncc.564
+          ncc.563
+          ncc.562
+          ncc.561
+          ncc.560
+          ncc.559
+          ncc.558
+          ncc.557
+          ncc.556
+          ncc.555
+          ncc.554
+          ncc.553
+          ncc.552
+          ncc.551
+          ncc.550
+          ncc.549
+          ncc.548
+          ncc.547
+          ncc.546
+          ncc.545
+          ncc.544
+          ncc.543
+          ncc.542
+          ncc.541
+          ncc.540
+          ncc.539
+          ncc.538
+          ncc.537
+          ncc.536
+          ncc.535
+          ncc.534
+          ncc.533
+          ncc.532
+          ncc.531
+          ncc.530
+          ncc.529
+          ncc.528
+          ncc.527
+          ncc.526
+          ncc.525
+          ncc.524
+          ncc.523
+          ncc.522
+          ncc.521
+          ncc.520
+          ncc.519
+          ncc.518
+          ncc.517
+          ncc.516
+          ncc.515
+          ncc.514
+          ncc.513
+          ncc.512
+          ncc.511
+          ncc.510
+          ncc.509
+          ncc.508
+          ncc.507
+          ncc.506
+          ncc.505
+          ncc.504
+          ncc.503
+          ncc.502
+          ncc.501
+          ncc.500
+          ncc.499
+          ncc.498
+          ncc.497
+          ncc.496
+          ncc.495
+          ncc.494
+          ncc.493
+          ncc.492
+          ncc.491
+          ncc.490
+          ncc.489
+          ncc.488
+          ncc.487
+          ncc.486
+          ncc.485
+          ncc.484
+          ncc.483
+          ncc.482
+          ncc.481
+          ncc.480
+          ncc.479
+          ncc.478
+          ncc.477
+          ncc.476
+          ncc.475
+          ncc.474
+          ncc.473
+          ncc.472
+          ncc.471
+          ncc.470
+          ncc.469
+          ncc.468
+          ncc.467
+          ncc.466
+          ncc.465
+          ncc.464
+          ncc.463
+          ncc.462
+          ncc.461
+          ncc.460
+          ncc.459
+          ncc.458
+          ncc.457
+          ncc.456
+          ncc.455
+          ncc.454
+          ncc.453
+          ncc.452
+          ncc.451
+          ncc.450
+          ncc.449
+          ncc.448
+          ncc.447
+          ncc.446
+          ncc.445
+          ncc.444
+          ncc.443
+          ncc.442
+          ncc.441
+          ncc.440
+          ncc.439
+          ncc.438
+          ncc.437
+          ncc.436
+          ncc.435
+          ncc.434
+          ncc.433
+          ncc.432
+          ncc.431
+          ncc.430
+          ncc.429
+          ncc.428
+          ncc.427
+          ncc.426
+          ncc.425
+          ncc.424
+          ncc.423
+          ncc.422
+          ncc.421
+          ncc.420
+          ncc.419
+          ncc.418
+          ncc.417
+          ncc.416
+          ncc.415
+          ncc.414
+          ncc.413
+          ncc.412
+          ncc.411
+          ncc.410
+          ncc.409
+          ncc.408
+          ncc.407
+          ncc.406
+          ncc.405
+          ncc.404
+          ncc.403
+          ncc.402
+          ncc.401
+          ncc.400
+          ncc.399
+          ncc.398
+          ncc.397
+          ncc.396
+          ncc.395
+          ncc.394
+          ncc.393
+          ncc.392
+          ncc.391
+          ncc.390
+          ncc.389
+          ncc.388
+          ncc.387
+          ncc.386
+          ncc.385
+          ncc.384
+          ncc.383
+          ncc.382
+          ncc.381
+          ncc.380
+          ncc.379
+          ncc.378
+          ncc.377
+          ncc.376
+          ncc.375
+          ncc.374
+          ncc.373
+          ncc.372
+          ncc.371
+          ncc.370
+          ncc.369
+          ncc.368
+          ncc.367
+          ncc.366
+          ncc.365
+          ncc.364
+          ncc.363
+          ncc.362
+          ncc.361
+          ncc.360
+          ncc.359
+          ncc.358
+          ncc.357
+          ncc.356
+          ncc.355
+          ncc.354
+          ncc.353
+          ncc.352
+          ncc.351
+          ncc.350
+          ncc.349
+          ncc.348
+          ncc.347
+          ncc.346
+          ncc.345
+          ncc.344
+          ncc.343
+          ncc.342
+          ncc.341
+          ncc.340
+          ncc.339
+          ncc.338
+          ncc.337
+          ncc.336
+          ncc.335
+          ncc.334
+          ncc.333
+          ncc.332
+          ncc.331
+          ncc.330
+          ncc.329
+          ncc.328
+          ncc.327
+          ncc.326
+          ncc.325
+          ncc.324
+          ncc.323
+          ncc.322
+          ncc.321
+          ncc.320
+          ncc.319
+          ncc.318
+          ncc.317
+          ncc.316
+          ncc.315
+          ncc.314
+          ncc.313
+          ncc.312
+          ncc.311
+          ncc.310
+          ncc.309
+          ncc.308
+          ncc.307
+          ncc.306
+          ncc.305
+          ncc.304
+          ncc.303
+          ncc.302
+          ncc.301
+          ncc.300
+          ncc.299
+          ncc.298
+          ncc.297
+          ncc.296
+          ncc.295
+          ncc.294
+          ncc.293
+          ncc.292
+          ncc.291
+          ncc.290
+          ncc.289
+          ncc.288
+          ncc.287
+          ncc.286
+          ncc.285
+          ncc.284
+          ncc.283
+          ncc.282
+          ncc.281
+          ncc.280
+          ncc.279
+          ncc.278
+          ncc.277
+          ncc.276
+          ncc.275
+          ncc.274
+          ncc.273
+          ncc.272
+          ncc.271
+          ncc.270
+          ncc.269
+          ncc.268
+          ncc.267
+          ncc.266
+          ncc.265
+          ncc.264
+          ncc.263
+          ncc.262
+          ncc.261
+          ncc.260
+          ncc.259
+          ncc.258
+          ncc.257
+          ncc.256
+          ncc.255
+          ncc.254
+          ncc.253
+          ncc.252
+          ncc.251
+          ncc.250
+          ncc.249
+          ncc.248
+          ncc.247
+          ncc.246
+          ncc.245
+          ncc.244
+          ncc.243
+          ncc.242
+          ncc.241
+          ncc.240
+          ncc.239
+          ncc.238
+          ncc.237
+          ncc.236
+          ncc.235
+          ncc.234
+          ncc.233
+          ncc.232
+          ncc.231
+          ncc.230
+          ncc.229
+          ncc.228
+          ncc.227
+          ncc.226
+          ncc.225
+          ncc.224
+          ncc.223
+          ncc.222
+          ncc.221
+          ncc.220
+          ncc.219
+          ncc.218
+          ncc.217
+          ncc.216
+          ncc.215
+          ncc.214
+          ncc.213
+          ncc.212
+          ncc.211
+          ncc.210
+          ncc.209
+          ncc.208
+          ncc.207
+          ncc.206
+          ncc.205
+          ncc.204
+          ncc.203
+          ncc.202
+          ncc.201
+          ncc.200
+          ncc.199
+          ncc.198
+          ncc.197
+          ncc.196
+          ncc.195
+          ncc.194
+          ncc.193
+          ncc.192
+          ncc.191
+          ncc.190
+          ncc.189
+          ncc.188
+          ncc.187
+          ncc.186
+          ncc.185
+          ncc.184
+          ncc.183
+          ncc.182
+          ncc.181
+          ncc.180
+          ncc.179
+          ncc.178
+          ncc.177
+          ncc.176
+          ncc.175
+          ncc.174
+          ncc.173
+          ncc.172
+          ncc.171
+          ncc.170
+          ncc.169
+          ncc.168
+          ncc.167
+          ncc.166
+          ncc.165
+          ncc.164
+          ncc.163
+          ncc.162
+          ncc.161
+          ncc.160
+          ncc.159
+          ncc.158
+          ncc.157
+          ncc.156
+          ncc.155
+          ncc.154
+          ncc.153
+          ncc.152
+          ncc.151
+          ncc.150
+          ncc.149
+          ncc.148
+          ncc.147
+          ncc.146
+          ncc.145
+          ncc.144
+          ncc.143
+          ncc.142
+          ncc.141
+          ncc.140
+          ncc.139
+          ncc.138
+          ncc.137
+          ncc.136
+          ncc.135
+          ncc.134
+          ncc.133
+          ncc.132
+          ncc.131
+          ncc.130
+          ncc.129
+          ncc.128
+          ncc.127
+          ncc.126
+          ncc.125
+          ncc.124
+          ncc.123
+          ncc.122
+          ncc.121
+          ncc.120
+          ncc.119
+          ncc.118
+          ncc.117
+          ncc.116
+          ncc.115
+          ncc.114
+          ncc.113
+          ncc.112
+          ncc.111
+          ncc.110
+          ncc.109
+          ncc.108
+          ncc.107
+          ncc.106
+          ncc.105
+          ncc.104
+          ncc.103
+          ncc.102
+          ncc.101
+          ncc.100
+          ncc.099
+          ncc.098
+          ncc.097
+          ncc.096
+          ncc.095
+          ncc.094
+          ncc.093
+          ncc.092
+          ncc.091
+          ncc.090
+          ncc.089
+          ncc.088
+          ncc.087
+          ncc.086
+          ncc.085
+          ncc.084
+          ncc.083
+          ncc.082
+          ncc.081
+          ncc.080
+          ncc.079
+          ncc.078
+          ncc.077
+          ncc.076
+          ncc.075
+          ncc.074
+          ncc.073
+          ncc.072
+          ncc.071
+          ncc.070
+          ncc.069
+          ncc.068
+          ncc.067
+          ncc.066
+          ncc.065
+          ncc.064
+          ncc.063
+          ncc.062
+          ncc.061
+          ncc.060
+          ncc.059
+          ncc.058
+          ncc.057
+          ncc.056
+          ncc.055
+          ncc.054
+          ncc.053
+          ncc.052
+          ncc.051
+          ncc.050
+          ncc.049
+          ncc.048
+          ncc.047
+          ncc.046
+          ncc.045
+          ncc.044
+          ncc.043
+          ncc.042
+          ncc.041
+          ncc.040
+          ncc.039
+          ncc.038
+          ncc.037
+          ncc.036
+          ncc.035
+          ncc.034
+          ncc.033
+          ncc.032
+          ncc.031
+          ncc.030
+          ncc.029
+          ncc.028
+          ncc.027
+          ncc.026
+          ncc.025
+          ncc.024
+          ncc.023
+          ncc.022
+          ncc.021
+          ncc.020
+          ncc.019
+          ncc.018
+          ncc.017
+          ncc.016
+          ncc.015
+          ncc.014
+          ncc.013
+          ncc.012
+          ncc.011
+          ncc.010
+          ncc.009
+          ncc.008
+          ncc.007
+          ncc.006
+          ncc.005
+          ncc.004
+          ncc.003
+          ncc.002
+          ncc.001
+          ncc
+     joints
+          01S_J_SkirtSide_2_0
+          01T_J_SkirtSide_2_1
+          01U_J_SkirtSide_2_2
+          01V_J_SkirtSide_2_3
+          01W_J_SkirtSide_2_4
+          01X_J_SkirtSide_2_5
+          01Y_J_SkirtSide_2_6
+          01Z_J_SkirtSide_2_7
+          00W_J_Skirt_1_0
+          00X_J_Skirt_1_1
+          00Y_J_Skirt_1_2
+          00Z_J_Skirt_1_3
+          010_J_Skirt_1_4
+          011_J_Skirt_1_5
+          012_J_Skirt_1_6
+          013_J_Skirt_1_7
+          014_J_Skirt_2_0
+          015_J_Skirt_2_1
+          016_J_Skirt_2_2
+          017_J_Skirt_2_3
+          018_J_Skirt_2_4
+          019_J_Skirt_2_5
+          01A_J_Skirt_2_6
+          01B_J_Skirt_2_7
+          01C_J_SkirtSide_0_0
+          01D_J_SkirtSide_0_1
+          01E_J_SkirtSide_0_2
+          01F_J_SkirtSide_0_3
+          01G_J_SkirtSide_0_4
+          01H_J_SkirtSide_0_5
+          01I_J_SkirtSide_0_6
+          01J_J_SkirtSide_0_7
+          01K_J_SkirtSide_1_0
+          01L_J_SkirtSide_1_1
+          01M_J_SkirtSide_1_2
+          01N_J_SkirtSide_1_3
+          01O_J_SkirtSide_1_4
+          01P_J_SkirtSide_1_5
+          01Q_J_SkirtSide_1_6
+          01R_J_SkirtSide_1_7
+          00G_J_LeftSideburn1
+          00H_J_LeftSideburn2
+          00I_J_FrontHair2
+          00J_J_FrontHair2_2
+          00K_J_FrontHair1
+          00L_J_FrontHair1_2
+          00M_J_FrontHair3
+          00N_J_FrontHair3_2
+          00O_J_Skirt_0_0
+          00P_J_Skirt_0_1
+          00Q_J_Skirt_0_2
+          00R_J_Skirt_0_3
+          00S_J_Skirt_0_4
+          00T_J_Skirt_0_5
+          00U_J_Skirt_0_6
+          00V_J_Skirt_0_7
+          008_J_LeftHair5
+          009_J_LeftHair6
+          00A_J_LeftHair7
+          00B_J_LeftHair8
+          00C_J_Antenna1
+          00D_J_Antenna2
+          00E_J_RightSideburn1
+          00F_J_RightSideburn2
+          004_J_Necktie4
+          005_J_LeftHair2
+          006_J_LeftHair3
+          007_J_LeftHair4
+          002_J_Necktie2
+          003_J_Necktie3
+          001_J_Necktie1
+          000_J_Necktie0
+     rigidbodies
+          01S_Skirt_2_3
+               mmd_bonetrack.043
+          01T_Skirt_2_4
+               mmd_bonetrack.044
+          01U_Skirt_2_5
+               mmd_bonetrack.045
+          01V_Skirt_2_6
+               mmd_bonetrack.046
+          01W_Skirt_2_7
+               mmd_bonetrack.047
+          00W_RightSideburn1
+               mmd_bonetrack.014
+          00X_RightSideburn2
+               mmd_bonetrack.015
+          00Y_LeftSideburn1
+               mmd_bonetrack.016
+          00Z_LeftSideburn2
+               mmd_bonetrack.017
+          010_FrontHair2
+               mmd_bonetrack.018
+          011_FrontHair2_2
+               mmd_bonetrack.019
+          012_FrontHair1
+               mmd_bonetrack.020
+          013_FrontHair1_2
+               mmd_bonetrack.021
+          014_FrontHair3
+               mmd_bonetrack.022
+          015_FrontHair3_2
+               mmd_bonetrack.023
+          019_Skirt_0_0
+               mmd_bonetrack.024
+          01A_Skirt_0_1
+               mmd_bonetrack.025
+          01B_Skirt_0_2
+               mmd_bonetrack.026
+          01C_Skirt_0_3
+               mmd_bonetrack.027
+          01D_Skirt_0_4
+               mmd_bonetrack.028
+          01E_Skirt_0_5
+               mmd_bonetrack.029
+          01F_Skirt_0_6
+               mmd_bonetrack.030
+          01G_Skirt_0_7
+               mmd_bonetrack.031
+          01H_Skirt_1_0
+               mmd_bonetrack.032
+          01I_Skirt_1_1
+               mmd_bonetrack.033
+          01J_Skirt_1_2
+               mmd_bonetrack.034
+          01K_Skirt_1_3
+               mmd_bonetrack.035
+          01L_Skirt_1_4
+               mmd_bonetrack.036
+          01M_Skirt_1_5
+               mmd_bonetrack.037
+          01N_Skirt_1_6
+               mmd_bonetrack.038
+          01O_Skirt_1_7
+               mmd_bonetrack.039
+          01P_Skirt_2_0
+               mmd_bonetrack.040
+          01Q_Skirt_2_1
+               mmd_bonetrack.041
+          01R_Skirt_2_2
+               mmd_bonetrack.042
+          00H_Necktie0
+               mmd_bonetrack
+          00I_Necktie1
+               mmd_bonetrack.001
+          00J_Necktie2
+               mmd_bonetrack.002
+          00K_Necktie3
+               mmd_bonetrack.003
+          00L_Necktie4
+               mmd_bonetrack.004
+          00N_LeftHair2
+               mmd_bonetrack.005
+          00O_LeftHair3
+               mmd_bonetrack.006
+          00P_LeftHair4
+               mmd_bonetrack.007
+          00Q_LeftHair5
+               mmd_bonetrack.008
+          00R_LeftHair6
+               mmd_bonetrack.009
+          00S_LeftHair7
+               mmd_bonetrack.010
+          00T_LeftHair8
+               mmd_bonetrack.011
+          00U_Antenna1
+               mmd_bonetrack.012
+          00V_Antenna2
+               mmd_bonetrack.013
+     SIOL
+          ParentNode
+               Center
+                    Groove
+                         Waist
+                              UpperBody
+                                   UpperBody2
+                                        Neck
+                                             Head
+                                                  Antenna1
+                                                       Antenna2
+                                                  Sideburn1_R
+                                                       Sideburn2_R
+                                                  Sideburn1_L
+                                                       Sideburn2_L
+                                                  FrontHair1
+                                                       FrontHair1_2
+                                                  FrontHair2
+                                                       FrontHair2_2
+                                                  FrontHair3
+                                                       FrontHair3_2
+                                                  Eyes
+                                                       _dummy_Eye_R
+                                                       _dummy_Eye_L
+                                                  Eye_R
+                                                       EyeReturn_R
+                                                  Eye_L
+                                                       EyeReturn_L
+                                                  Hair1_L
+                                                       Hair2_L
+                                                            Hair3_L
+                                                                 Hair4_L
+                                                                      Hair5_L
+                                                                           Hair6_L
+                                                                                Hair7_L
+                                                                                     Hair8_L
+                                                                                          Hair8_L_
+                                                  Eyeglasses
+                                                  Tongue1
+                                                       Tongue2
+                                                            Tongue3
+                                                  _shadow_Eye_R
+                                                  _shadow_Eye_L
+                                        ShoulderP_R
+                                             Shoulder_R
+                                                  ShoulderC_R
+                                                       Arm_R
+                                                            ArmTwist_R
+                                                                 Elbow_R
+                                                                      HandTwist_R
+                                                                           Wrist_R
+                                                                                Dummy_R
+                                                                                Thumb0_R
+                                                                                     Thumb1_R
+                                                                                          Thumb2_R
+                                                                                LittleFinger1_R
+                                                                                     LittleFinger2_R
+                                                                                          LittleFinger3_R
+                                                                                RingFinger1_R
+                                                                                     RingFinger2_R
+                                                                                          RingFinger3_R
+                                                                                MiddleFinger1_R
+                                                                                     MiddleFinger2_R
+                                                                                          MiddleFinger3_R
+                                                                                IndexFinger1_R
+                                                                                     IndexFinger2_R
+                                                                                          IndexFinger3_R
+                                                                           _dummy_HandTwist1_R
+                                                                           _dummy_HandTwist2_R
+                                                                           _dummy_HandTwist3_R
+                                                                      HandTwist1_R
+                                                                      HandTwist2_R
+                                                                      HandTwist3_R
+                                                                      Sleeve_R
+                                                                      _shadow_HandTwist1_R
+                                                                      _shadow_HandTwist2_R
+                                                                      _shadow_HandTwist3_R
+                                                            ArmTwist1_R
+                                                            ArmTwist2_R
+                                                            ArmTwist3_R
+                                        ShoulderP_L
+                                             Shoulder_L
+                                                  ShoulderC_L
+                                                       Arm_L
+                                                            ArmTwist_L
+                                                                 Elbow_L
+                                                                      HandTwist_L
+                                                                           Wrist_L
+                                                                                Dummy_L
+                                                                                Thumb0_L
+                                                                                     Thumb1_L
+                                                                                          Thumb2_L
+                                                                                LittleFinger1_L
+                                                                                     LittleFinger2_L
+                                                                                          LittleFinger3_L
+                                                                                RingFinger1_L
+                                                                                     RingFinger2_L
+                                                                                          RingFinger3_L
+                                                                                MiddleFinger1_L
+                                                                                     MiddleFinger2_L
+                                                                                          MiddleFinger3_L
+                                                                                IndexFinger1_L
+                                                                                     IndexFinger2_L
+                                                                                          IndexFinger3_L
+                                                                           _dummy_HandTwist1_L
+                                                                           _dummy_HandTwist2_L
+                                                                           _dummy_HandTwist3_L
+                                                                      HandTwist1_L
+                                                                      HandTwist2_L
+                                                                      HandTwist3_L
+                                                                      Sleeve_L
+                                                                      _shadow_HandTwist1_L
+                                                                      _shadow_HandTwist2_L
+                                                                      _shadow_HandTwist3_L
+                                                            ArmTwist1_L
+                                                            ArmTwist2_L
+                                                            ArmTwist3_L
+                                        Necktie0
+                                             Necktie1
+                                                  Necktie2
+                                                       Necktie3
+                                                            Necktie4
+                                                                 Necktie4_
+                              HairIK_L
+                              NecktieIK
+                              LowerBody
+                                   WaistCancel_R
+                                        Leg_R
+                                             Knee_R
+                                                  Ankle_R
+                                                       Ankle_R_
+                                                       _dummy_AnkleD_R
+                                                  _dummy_KneeD_R
+                                                  _shadow_AnkleD_R
+                                             _dummy_LegD_R
+                                             _shadow_KneeD_R
+                                        LegD_R
+                                             KneeD_R
+                                                  AnkleD_R
+                                                       LegTipEX_R
+                                        _shadow_LegD_R
+                                   WaistCancel_L
+                                        Leg_L
+                                             Knee_L
+                                                  Ankle_L
+                                                       Ankle_L_
+                                                       _dummy_AnkleD_L
+                                                  _dummy_KneeD_L
+                                                  _shadow_AnkleD_L
+                                             _dummy_LegD_L
+                                             _shadow_KneeD_L
+                                        LegD_L
+                                             KneeD_L
+                                                  AnkleD_L
+                                                       LegTipEX_L
+                                        _shadow_LegD_L
+                                   Skirt_0_0
+                                        Skirt_1_0
+                                             Skirt_2_0
+                                                  Skirt_3_0
+                                   Skirt_0_1
+                                        Skirt_1_1
+                                             Skirt_2_1
+                                                  Skirt_3_1
+                                   Skirt_0_2
+                                        Skirt_1_2
+                                             Skirt_2_2
+                                                  Skirt_3_2
+                                   Skirt_0_3
+                                        Skirt_1_3
+                                             Skirt_2_3
+                                                  Skirt_3_3
+                                   Skirt_0_4
+                                        Skirt_1_4
+                                             Skirt_2_4
+                                                  Skirt_3_4
+                                   Skirt_0_5
+                                        Skirt_1_5
+                                             Skirt_2_5
+                                                  Skirt_3_5
+                                   Skirt_0_6
+                                        Skirt_1_6
+                                             Skirt_2_6
+                                                  Skirt_3_6
+                                   Skirt_0_7
+                                        Skirt_1_7
+                                             Skirt_2_7
+                                                  Skirt_3_7
+                              _dummy_WaistCancel_R
+                              _dummy_WaistCancel_L
+                         _shadow_WaistCancel_R
+                         _shadow_WaistCancel_L
+               LegIKParent_R
+                    LegIK_R
+                         ToeTipIK_R
+               LegIKParent_L
+                    LegIK_L
+                         ToeTipIK_L
+SkirtArm
+Other
+Light1
+Blouse
+skirtArmAcc
+lens
+hairShadow
+glasses
+hair1
+hair0
+eyeHi1
+eyeHi0
+face1
+face0
+Legs
+Body
+Light0
+Index: 0 Parent : null Parent Index : -100 Name : ParentNode
+Index: 1 Parent : 0 Parent Index : 0      Name : Center
+Index: 2 Parent : 1 Parent Index : 1           Name : Groove
+Index: 3 Parent : 2 Parent Index : 2                Name : Waist
+Index: 4 Parent : 3 Parent Index : 3                     Name : UpperBody
+Index: 5 Parent : 4 Parent Index : 4                          Name : UpperBody2
+Index: 6 Parent : 5 Parent Index : 5                               Name : Neck
+Index: 7 Parent : 6 Parent Index : 6                                    Name : Head
+Index: 8 Parent : 7 Parent Index : 7                                         Name : Antenna1
+Index: 9 Parent : 8 Parent Index : 8                                              Name : Antenna2
+Index: 10 Parent : 7 Parent Index : 7                                         Name : Sideburn1_R
+Index: 11 Parent : 10 Parent Index : 10                                              Name : Sideburn2_R
+Index: 12 Parent : 7 Parent Index : 7                                         Name : Sideburn1_L
+Index: 13 Parent : 12 Parent Index : 12                                              Name : Sideburn2_L
+Index: 14 Parent : 7 Parent Index : 7                                         Name : FrontHair1
+Index: 15 Parent : 14 Parent Index : 14                                              Name : FrontHair1_2
+Index: 16 Parent : 7 Parent Index : 7                                         Name : FrontHair2
+Index: 17 Parent : 16 Parent Index : 16                                              Name : FrontHair2_2
+Index: 18 Parent : 7 Parent Index : 7                                         Name : FrontHair3
+Index: 19 Parent : 18 Parent Index : 18                                              Name : FrontHair3_2
+Index: 20 Parent : 7 Parent Index : 7                                         Name : Eyes
+Index: 21 Parent : 20 Parent Index : 20                                              Name : _dummy_Eye_R
+Index: 22 Parent : 20 Parent Index : 20                                              Name : _dummy_Eye_L
+Index: 23 Parent : 7 Parent Index : 7                                         Name : Eye_R
+Index: 24 Parent : 23 Parent Index : 23                                              Name : EyeReturn_R
+Index: 25 Parent : 7 Parent Index : 7                                         Name : Eye_L
+Index: 26 Parent : 25 Parent Index : 25                                              Name : EyeReturn_L
+Index: 27 Parent : 7 Parent Index : 7                                         Name : Hair1_L
+Index: 28 Parent : 27 Parent Index : 27                                              Name : Hair2_L
+Index: 29 Parent : 28 Parent Index : 28                                                   Name : Hair3_L
+Index: 30 Parent : 29 Parent Index : 29                                                        Name : Hair4_L
+Index: 31 Parent : 30 Parent Index : 30                                                             Name : Hair5_L
+Index: 32 Parent : 31 Parent Index : 31                                                                  Name : Hair6_L
+Index: 33 Parent : 32 Parent Index : 32                                                                       Name : Hair7_L
+Index: 34 Parent : 33 Parent Index : 33                                                                            Name : Hair8_L
+Index: 35 Parent : 34 Parent Index : 34                                                                                 Name : Hair8_L_
+Index: 36 Parent : 7 Parent Index : 7                                         Name : Eyeglasses
+Index: 37 Parent : 7 Parent Index : 7                                         Name : Tongue1
+Index: 38 Parent : 37 Parent Index : 37                                              Name : Tongue2
+Index: 39 Parent : 38 Parent Index : 38                                                   Name : Tongue3
+Index: 40 Parent : 7 Parent Index : 7                                         Name : _shadow_Eye_R
+Index: 41 Parent : 7 Parent Index : 7                                         Name : _shadow_Eye_L
+Index: 42 Parent : 5 Parent Index : 5                               Name : ShoulderP_R
+Index: 43 Parent : 42 Parent Index : 42                                    Name : Shoulder_R
+Index: 44 Parent : 43 Parent Index : 43                                         Name : ShoulderC_R
+Index: 45 Parent : 44 Parent Index : 44                                              Name : Arm_R
+Index: 46 Parent : 45 Parent Index : 45                                                   Name : ArmTwist_R
+Index: 47 Parent : 46 Parent Index : 46                                                        Name : Elbow_R
+Index: 48 Parent : 47 Parent Index : 47                                                             Name : HandTwist_R
+Index: 49 Parent : 48 Parent Index : 48                                                                  Name : Wrist_R
+Index: 50 Parent : 49 Parent Index : 49                                                                       Name : Dummy_R
+Index: 51 Parent : 49 Parent Index : 49                                                                       Name : Thumb0_R
+Index: 52 Parent : 51 Parent Index : 51                                                                            Name : Thumb1_R
+Index: 53 Parent : 52 Parent Index : 52                                                                                 Name : Thumb2_R
+Index: 54 Parent : 49 Parent Index : 49                                                                       Name : LittleFinger1_R
+Index: 55 Parent : 54 Parent Index : 54                                                                            Name : LittleFinger2_R
+Index: 56 Parent : 55 Parent Index : 55                                                                                 Name : LittleFinger3_R
+Index: 57 Parent : 49 Parent Index : 49                                                                       Name : RingFinger1_R
+Index: 58 Parent : 57 Parent Index : 57                                                                            Name : RingFinger2_R
+Index: 59 Parent : 58 Parent Index : 58                                                                                 Name : RingFinger3_R
+Index: 60 Parent : 49 Parent Index : 49                                                                       Name : MiddleFinger1_R
+Index: 61 Parent : 60 Parent Index : 60                                                                            Name : MiddleFinger2_R
+Index: 62 Parent : 61 Parent Index : 61                                                                                 Name : MiddleFinger3_R
+Index: 63 Parent : 49 Parent Index : 49                                                                       Name : IndexFinger1_R
+Index: 64 Parent : 63 Parent Index : 63                                                                            Name : IndexFinger2_R
+Index: 65 Parent : 64 Parent Index : 64                                                                                 Name : IndexFinger3_R
+Index: 66 Parent : 48 Parent Index : 48                                                                  Name : _dummy_HandTwist1_R
+Index: 67 Parent : 48 Parent Index : 48                                                                  Name : _dummy_HandTwist2_R
+Index: 68 Parent : 48 Parent Index : 48                                                                  Name : _dummy_HandTwist3_R
+Index: 69 Parent : 47 Parent Index : 47                                                             Name : HandTwist1_R
+Index: 70 Parent : 47 Parent Index : 47                                                             Name : HandTwist2_R
+Index: 71 Parent : 47 Parent Index : 47                                                             Name : HandTwist3_R
+Index: 72 Parent : 47 Parent Index : 47                                                             Name : Sleeve_R
+Index: 73 Parent : 47 Parent Index : 47                                                             Name : _shadow_HandTwist1_R
+Index: 74 Parent : 47 Parent Index : 47                                                             Name : _shadow_HandTwist2_R
+Index: 75 Parent : 47 Parent Index : 47                                                             Name : _shadow_HandTwist3_R
+Index: 76 Parent : 45 Parent Index : 45                                                   Name : ArmTwist1_R
+Index: 77 Parent : 45 Parent Index : 45                                                   Name : ArmTwist2_R
+Index: 78 Parent : 45 Parent Index : 45                                                   Name : ArmTwist3_R
+Index: 79 Parent : 5 Parent Index : 5                               Name : ShoulderP_L
+Index: 80 Parent : 79 Parent Index : 79                                    Name : Shoulder_L
+Index: 81 Parent : 80 Parent Index : 80                                         Name : ShoulderC_L
+Index: 82 Parent : 81 Parent Index : 81                                              Name : Arm_L
+Index: 83 Parent : 82 Parent Index : 82                                                   Name : ArmTwist_L
+Index: 84 Parent : 83 Parent Index : 83                                                        Name : Elbow_L
+Index: 85 Parent : 84 Parent Index : 84                                                             Name : HandTwist_L
+Index: 86 Parent : 85 Parent Index : 85                                                                  Name : Wrist_L
+Index: 87 Parent : 86 Parent Index : 86                                                                       Name : Dummy_L
+Index: 88 Parent : 86 Parent Index : 86                                                                       Name : Thumb0_L
+Index: 89 Parent : 88 Parent Index : 88                                                                            Name : Thumb1_L
+Index: 90 Parent : 89 Parent Index : 89                                                                                 Name : Thumb2_L
+Index: 91 Parent : 86 Parent Index : 86                                                                       Name : LittleFinger1_L
+Index: 92 Parent : 91 Parent Index : 91                                                                            Name : LittleFinger2_L
+Index: 93 Parent : 92 Parent Index : 92                                                                                 Name : LittleFinger3_L
+Index: 94 Parent : 86 Parent Index : 86                                                                       Name : RingFinger1_L
+Index: 95 Parent : 94 Parent Index : 94                                                                            Name : RingFinger2_L
+Index: 96 Parent : 95 Parent Index : 95                                                                                 Name : RingFinger3_L
+Index: 97 Parent : 86 Parent Index : 86                                                                       Name : MiddleFinger1_L
+Index: 98 Parent : 97 Parent Index : 97                                                                            Name : MiddleFinger2_L
+Index: 99 Parent : 98 Parent Index : 98                                                                                 Name : MiddleFinger3_L
+Index: 100 Parent : 86 Parent Index : 86                                                                       Name : IndexFinger1_L
+Index: 101 Parent : 100 Parent Index : 100                                                                            Name : IndexFinger2_L
+Index: 102 Parent : 101 Parent Index : 101                                                                                 Name : IndexFinger3_L
+Index: 103 Parent : 85 Parent Index : 85                                                                  Name : _dummy_HandTwist1_L
+Index: 104 Parent : 85 Parent Index : 85                                                                  Name : _dummy_HandTwist2_L
+Index: 105 Parent : 85 Parent Index : 85                                                                  Name : _dummy_HandTwist3_L
+Index: 106 Parent : 84 Parent Index : 84                                                             Name : HandTwist1_L
+Index: 107 Parent : 84 Parent Index : 84                                                             Name : HandTwist2_L
+Index: 108 Parent : 84 Parent Index : 84                                                             Name : HandTwist3_L
+Index: 109 Parent : 84 Parent Index : 84                                                             Name : Sleeve_L
+Index: 110 Parent : 84 Parent Index : 84                                                             Name : _shadow_HandTwist1_L
+Index: 111 Parent : 84 Parent Index : 84                                                             Name : _shadow_HandTwist2_L
+Index: 112 Parent : 84 Parent Index : 84                                                             Name : _shadow_HandTwist3_L
+Index: 113 Parent : 82 Parent Index : 82                                                   Name : ArmTwist1_L
+Index: 114 Parent : 82 Parent Index : 82                                                   Name : ArmTwist2_L
+Index: 115 Parent : 82 Parent Index : 82                                                   Name : ArmTwist3_L
+Index: 116 Parent : 5 Parent Index : 5                               Name : Necktie0
+Index: 117 Parent : 116 Parent Index : 116                                    Name : Necktie1
+Index: 118 Parent : 117 Parent Index : 117                                         Name : Necktie2
+Index: 119 Parent : 118 Parent Index : 118                                              Name : Necktie3
+Index: 120 Parent : 119 Parent Index : 119                                                   Name : Necktie4
+Index: 121 Parent : 120 Parent Index : 120                                                        Name : Necktie4_
+Index: 122 Parent : 3 Parent Index : 3                     Name : HairIK_L
+Index: 123 Parent : 3 Parent Index : 3                     Name : NecktieIK
+Index: 124 Parent : 3 Parent Index : 3                     Name : LowerBody
+Index: 125 Parent : 124 Parent Index : 124                          Name : WaistCancel_R
+Index: 126 Parent : 125 Parent Index : 125                               Name : Leg_R
+Index: 127 Parent : 126 Parent Index : 126                                    Name : Knee_R
+Index: 128 Parent : 127 Parent Index : 127                                         Name : Ankle_R
+Index: 129 Parent : 128 Parent Index : 128                                              Name : Ankle_R_
+Index: 130 Parent : 128 Parent Index : 128                                              Name : _dummy_AnkleD_R
+Index: 131 Parent : 127 Parent Index : 127                                         Name : _dummy_KneeD_R
+Index: 132 Parent : 127 Parent Index : 127                                         Name : _shadow_AnkleD_R
+Index: 133 Parent : 126 Parent Index : 126                                    Name : _dummy_LegD_R
+Index: 134 Parent : 126 Parent Index : 126                                    Name : _shadow_KneeD_R
+Index: 135 Parent : 125 Parent Index : 125                               Name : LegD_R
+Index: 136 Parent : 135 Parent Index : 135                                    Name : KneeD_R
+Index: 137 Parent : 136 Parent Index : 136                                         Name : AnkleD_R
+Index: 138 Parent : 137 Parent Index : 137                                              Name : LegTipEX_R
+Index: 139 Parent : 125 Parent Index : 125                               Name : _shadow_LegD_R
+Index: 140 Parent : 124 Parent Index : 124                          Name : WaistCancel_L
+Index: 141 Parent : 140 Parent Index : 140                               Name : Leg_L
+Index: 142 Parent : 141 Parent Index : 141                                    Name : Knee_L
+Index: 143 Parent : 142 Parent Index : 142                                         Name : Ankle_L
+Index: 144 Parent : 143 Parent Index : 143                                              Name : Ankle_L_
+Index: 145 Parent : 143 Parent Index : 143                                              Name : _dummy_AnkleD_L
+Index: 146 Parent : 142 Parent Index : 142                                         Name : _dummy_KneeD_L
+Index: 147 Parent : 142 Parent Index : 142                                         Name : _shadow_AnkleD_L
+Index: 148 Parent : 141 Parent Index : 141                                    Name : _dummy_LegD_L
+Index: 149 Parent : 141 Parent Index : 141                                    Name : _shadow_KneeD_L
+Index: 150 Parent : 140 Parent Index : 140                               Name : LegD_L
+Index: 151 Parent : 150 Parent Index : 150                                    Name : KneeD_L
+Index: 152 Parent : 151 Parent Index : 151                                         Name : AnkleD_L
+Index: 153 Parent : 152 Parent Index : 152                                              Name : LegTipEX_L
+Index: 154 Parent : 140 Parent Index : 140                               Name : _shadow_LegD_L
+Index: 155 Parent : 124 Parent Index : 124                          Name : Skirt_0_0
+Index: 156 Parent : 155 Parent Index : 155                               Name : Skirt_1_0
+Index: 157 Parent : 156 Parent Index : 156                                    Name : Skirt_2_0
+Index: 158 Parent : 157 Parent Index : 157                                         Name : Skirt_3_0
+Index: 159 Parent : 124 Parent Index : 124                          Name : Skirt_0_1
+Index: 160 Parent : 159 Parent Index : 159                               Name : Skirt_1_1
+Index: 161 Parent : 160 Parent Index : 160                                    Name : Skirt_2_1
+Index: 162 Parent : 161 Parent Index : 161                                         Name : Skirt_3_1
+Index: 163 Parent : 124 Parent Index : 124                          Name : Skirt_0_2
+Index: 164 Parent : 163 Parent Index : 163                               Name : Skirt_1_2
+Index: 165 Parent : 164 Parent Index : 164                                    Name : Skirt_2_2
+Index: 166 Parent : 165 Parent Index : 165                                         Name : Skirt_3_2
+Index: 167 Parent : 124 Parent Index : 124                          Name : Skirt_0_3
+Index: 168 Parent : 167 Parent Index : 167                               Name : Skirt_1_3
+Index: 169 Parent : 168 Parent Index : 168                                    Name : Skirt_2_3
+Index: 170 Parent : 169 Parent Index : 169                                         Name : Skirt_3_3
+Index: 171 Parent : 124 Parent Index : 124                          Name : Skirt_0_4
+Index: 172 Parent : 171 Parent Index : 171                               Name : Skirt_1_4
+Index: 173 Parent : 172 Parent Index : 172                                    Name : Skirt_2_4
+Index: 174 Parent : 173 Parent Index : 173                                         Name : Skirt_3_4
+Index: 175 Parent : 124 Parent Index : 124                          Name : Skirt_0_5
+Index: 176 Parent : 175 Parent Index : 175                               Name : Skirt_1_5
+Index: 177 Parent : 176 Parent Index : 176                                    Name : Skirt_2_5
+Index: 178 Parent : 177 Parent Index : 177                                         Name : Skirt_3_5
+Index: 179 Parent : 124 Parent Index : 124                          Name : Skirt_0_6
+Index: 180 Parent : 179 Parent Index : 179                               Name : Skirt_1_6
+Index: 181 Parent : 180 Parent Index : 180                                    Name : Skirt_2_6
+Index: 182 Parent : 181 Parent Index : 181                                         Name : Skirt_3_6
+Index: 183 Parent : 124 Parent Index : 124                          Name : Skirt_0_7
+Index: 184 Parent : 183 Parent Index : 183                               Name : Skirt_1_7
+Index: 185 Parent : 184 Parent Index : 184                                    Name : Skirt_2_7
+Index: 186 Parent : 185 Parent Index : 185                                         Name : Skirt_3_7
+Index: 187 Parent : 3 Parent Index : 3                     Name : _dummy_WaistCancel_R
+Index: 188 Parent : 3 Parent Index : 3                     Name : _dummy_WaistCancel_L
+Index: 189 Parent : 2 Parent Index : 2                Name : _shadow_WaistCancel_R
+Index: 190 Parent : 2 Parent Index : 2                Name : _shadow_WaistCancel_L
+Index: 191 Parent : 0 Parent Index : 0      Name : LegIKParent_R
+Index: 192 Parent : 191 Parent Index : 191           Name : LegIK_R
+Index: 193 Parent : 192 Parent Index : 192                Name : ToeTipIK_R
+Index: 194 Parent : 0 Parent Index : 0      Name : LegIKParent_L
+Index: 195 Parent : 194 Parent Index : 194           Name : LegIK_L
+Index: 196 Parent : 195 Parent Index : 195                Name : ToeTipIK_L
+reading structure
+Bone Index : 0 Bone Parent Index : -100 Bone Name : 0
+Bone Index : 1 Bone Parent Index : 0 Bone Name : 1
+Bone Index : 2 Bone Parent Index : 1 Bone Name : 2
+Bone Index : 3 Bone Parent Index : 2 Bone Name : 3
+Bone Index : 4 Bone Parent Index : 3 Bone Name : 4
+Bone Index : 5 Bone Parent Index : 4 Bone Name : 5
+Bone Index : 6 Bone Parent Index : 5 Bone Name : 6
+Bone Index : 7 Bone Parent Index : 6 Bone Name : 7
+Bone Index : 8 Bone Parent Index : 7 Bone Name : 8
+Bone Index : 9 Bone Parent Index : 8 Bone Name : 9
+Bone Index : 10 Bone Parent Index : 7 Bone Name : 10
+Bone Index : 11 Bone Parent Index : 10 Bone Name : 11
+Bone Index : 12 Bone Parent Index : 7 Bone Name : 12
+Bone Index : 13 Bone Parent Index : 12 Bone Name : 13
+Bone Index : 14 Bone Parent Index : 7 Bone Name : 14
+Bone Index : 15 Bone Parent Index : 14 Bone Name : 15
+Bone Index : 16 Bone Parent Index : 7 Bone Name : 16
+Bone Index : 17 Bone Parent Index : 16 Bone Name : 17
+Bone Index : 18 Bone Parent Index : 7 Bone Name : 18
+Bone Index : 19 Bone Parent Index : 18 Bone Name : 19
+Bone Index : 20 Bone Parent Index : 7 Bone Name : 20
+Bone Index : 21 Bone Parent Index : 20 Bone Name : 21
+Bone Index : 22 Bone Parent Index : 20 Bone Name : 22
+Bone Index : 23 Bone Parent Index : 7 Bone Name : 23
+Bone Index : 24 Bone Parent Index : 23 Bone Name : 24
+Bone Index : 25 Bone Parent Index : 7 Bone Name : 25
+Bone Index : 26 Bone Parent Index : 25 Bone Name : 26
+Bone Index : 27 Bone Parent Index : 7 Bone Name : 27
+Bone Index : 28 Bone Parent Index : 27 Bone Name : 28
+Bone Index : 29 Bone Parent Index : 28 Bone Name : 29
+Bone Index : 30 Bone Parent Index : 29 Bone Name : 30
+Bone Index : 31 Bone Parent Index : 30 Bone Name : 31
+Bone Index : 32 Bone Parent Index : 31 Bone Name : 32
+Bone Index : 33 Bone Parent Index : 32 Bone Name : 33
+Bone Index : 34 Bone Parent Index : 33 Bone Name : 34
+Bone Index : 35 Bone Parent Index : 34 Bone Name : 35
+Bone Index : 36 Bone Parent Index : 7 Bone Name : 36
+Bone Index : 37 Bone Parent Index : 7 Bone Name : 37
+Bone Index : 38 Bone Parent Index : 37 Bone Name : 38
+Bone Index : 39 Bone Parent Index : 38 Bone Name : 39
+Bone Index : 40 Bone Parent Index : 7 Bone Name : 40
+Bone Index : 41 Bone Parent Index : 7 Bone Name : 41
+Bone Index : 42 Bone Parent Index : 5 Bone Name : 42
+Bone Index : 43 Bone Parent Index : 42 Bone Name : 43
+Bone Index : 44 Bone Parent Index : 43 Bone Name : 44
+Bone Index : 45 Bone Parent Index : 44 Bone Name : 45
+Bone Index : 46 Bone Parent Index : 45 Bone Name : 46
+Bone Index : 47 Bone Parent Index : 46 Bone Name : 47
+Bone Index : 48 Bone Parent Index : 47 Bone Name : 48
+Bone Index : 49 Bone Parent Index : 48 Bone Name : 49
+Bone Index : 50 Bone Parent Index : 49 Bone Name : 50
+Bone Index : 51 Bone Parent Index : 49 Bone Name : 51
+Bone Index : 52 Bone Parent Index : 51 Bone Name : 52
+Bone Index : 53 Bone Parent Index : 52 Bone Name : 53
+Bone Index : 54 Bone Parent Index : 49 Bone Name : 54
+Bone Index : 55 Bone Parent Index : 54 Bone Name : 55
+Bone Index : 56 Bone Parent Index : 55 Bone Name : 56
+Bone Index : 57 Bone Parent Index : 49 Bone Name : 57
+Bone Index : 58 Bone Parent Index : 57 Bone Name : 58
+Bone Index : 59 Bone Parent Index : 58 Bone Name : 59
+Bone Index : 60 Bone Parent Index : 49 Bone Name : 60
+Bone Index : 61 Bone Parent Index : 60 Bone Name : 61
+Bone Index : 62 Bone Parent Index : 61 Bone Name : 62
+Bone Index : 63 Bone Parent Index : 49 Bone Name : 63
+Bone Index : 64 Bone Parent Index : 63 Bone Name : 64
+Bone Index : 65 Bone Parent Index : 64 Bone Name : 65
+Bone Index : 66 Bone Parent Index : 48 Bone Name : 66
+Bone Index : 67 Bone Parent Index : 48 Bone Name : 67
+Bone Index : 68 Bone Parent Index : 48 Bone Name : 68
+Bone Index : 69 Bone Parent Index : 47 Bone Name : 69
+Bone Index : 70 Bone Parent Index : 47 Bone Name : 70
+Bone Index : 71 Bone Parent Index : 47 Bone Name : 71
+Bone Index : 72 Bone Parent Index : 47 Bone Name : 72
+Bone Index : 73 Bone Parent Index : 47 Bone Name : 73
+Bone Index : 74 Bone Parent Index : 47 Bone Name : 74
+Bone Index : 75 Bone Parent Index : 47 Bone Name : 75
+Bone Index : 76 Bone Parent Index : 45 Bone Name : 76
+Bone Index : 77 Bone Parent Index : 45 Bone Name : 77
+Bone Index : 78 Bone Parent Index : 45 Bone Name : 78
+Bone Index : 79 Bone Parent Index : 5 Bone Name : 79
+Bone Index : 80 Bone Parent Index : 79 Bone Name : 80
+Bone Index : 81 Bone Parent Index : 80 Bone Name : 81
+Bone Index : 82 Bone Parent Index : 81 Bone Name : 82
+Bone Index : 83 Bone Parent Index : 82 Bone Name : 83
+Bone Index : 84 Bone Parent Index : 83 Bone Name : 84
+Bone Index : 85 Bone Parent Index : 84 Bone Name : 85
+Bone Index : 86 Bone Parent Index : 85 Bone Name : 86
+Bone Index : 87 Bone Parent Index : 86 Bone Name : 87
+Bone Index : 88 Bone Parent Index : 86 Bone Name : 88
+Bone Index : 89 Bone Parent Index : 88 Bone Name : 89
+Bone Index : 90 Bone Parent Index : 89 Bone Name : 90
+Bone Index : 91 Bone Parent Index : 86 Bone Name : 91
+Bone Index : 92 Bone Parent Index : 91 Bone Name : 92
+Bone Index : 93 Bone Parent Index : 92 Bone Name : 93
+Bone Index : 94 Bone Parent Index : 86 Bone Name : 94
+Bone Index : 95 Bone Parent Index : 94 Bone Name : 95
+Bone Index : 96 Bone Parent Index : 95 Bone Name : 96
+Bone Index : 97 Bone Parent Index : 86 Bone Name : 97
+Bone Index : 98 Bone Parent Index : 97 Bone Name : 98
+Bone Index : 99 Bone Parent Index : 98 Bone Name : 99
+Bone Index : 100 Bone Parent Index : 86 Bone Name : 100
+Bone Index : 101 Bone Parent Index : 100 Bone Name : 101
+Bone Index : 102 Bone Parent Index : 101 Bone Name : 102
+Bone Index : 103 Bone Parent Index : 85 Bone Name : 103
+Bone Index : 104 Bone Parent Index : 85 Bone Name : 104
+Bone Index : 105 Bone Parent Index : 85 Bone Name : 105
+Bone Index : 106 Bone Parent Index : 84 Bone Name : 106
+Bone Index : 107 Bone Parent Index : 84 Bone Name : 107
+Bone Index : 108 Bone Parent Index : 84 Bone Name : 108
+Bone Index : 109 Bone Parent Index : 84 Bone Name : 109
+Bone Index : 110 Bone Parent Index : 84 Bone Name : 110
+Bone Index : 111 Bone Parent Index : 84 Bone Name : 111
+Bone Index : 112 Bone Parent Index : 84 Bone Name : 112
+Bone Index : 113 Bone Parent Index : 82 Bone Name : 113
+Bone Index : 114 Bone Parent Index : 82 Bone Name : 114
+Bone Index : 115 Bone Parent Index : 82 Bone Name : 115
+Bone Index : 116 Bone Parent Index : 5 Bone Name : 116
+Bone Index : 117 Bone Parent Index : 116 Bone Name : 117
+Bone Index : 118 Bone Parent Index : 117 Bone Name : 118
+Bone Index : 119 Bone Parent Index : 118 Bone Name : 119
+Bone Index : 120 Bone Parent Index : 119 Bone Name : 120
+Bone Index : 121 Bone Parent Index : 120 Bone Name : 121
+Bone Index : 122 Bone Parent Index : 3 Bone Name : 122
+Bone Index : 123 Bone Parent Index : 3 Bone Name : 123
+Bone Index : 124 Bone Parent Index : 3 Bone Name : 124
+Bone Index : 125 Bone Parent Index : 124 Bone Name : 125
+Bone Index : 126 Bone Parent Index : 125 Bone Name : 126
+Bone Index : 127 Bone Parent Index : 126 Bone Name : 127
+Bone Index : 128 Bone Parent Index : 127 Bone Name : 128
+Bone Index : 129 Bone Parent Index : 128 Bone Name : 129
+Bone Index : 130 Bone Parent Index : 128 Bone Name : 130
+Bone Index : 131 Bone Parent Index : 127 Bone Name : 131
+Bone Index : 132 Bone Parent Index : 127 Bone Name : 132
+Bone Index : 133 Bone Parent Index : 126 Bone Name : 133
+Bone Index : 134 Bone Parent Index : 126 Bone Name : 134
+Bone Index : 135 Bone Parent Index : 125 Bone Name : 135
+Bone Index : 136 Bone Parent Index : 135 Bone Name : 136
+Bone Index : 137 Bone Parent Index : 136 Bone Name : 137
+Bone Index : 138 Bone Parent Index : 137 Bone Name : 138
+Bone Index : 139 Bone Parent Index : 125 Bone Name : 139
+Bone Index : 140 Bone Parent Index : 124 Bone Name : 140
+Bone Index : 141 Bone Parent Index : 140 Bone Name : 141
+Bone Index : 142 Bone Parent Index : 141 Bone Name : 142
+Bone Index : 143 Bone Parent Index : 142 Bone Name : 143
+Bone Index : 144 Bone Parent Index : 143 Bone Name : 144
+Bone Index : 145 Bone Parent Index : 143 Bone Name : 145
+Bone Index : 146 Bone Parent Index : 142 Bone Name : 146
+Bone Index : 147 Bone Parent Index : 142 Bone Name : 147
+Bone Index : 148 Bone Parent Index : 141 Bone Name : 148
+Bone Index : 149 Bone Parent Index : 141 Bone Name : 149
+Bone Index : 150 Bone Parent Index : 140 Bone Name : 150
+Bone Index : 151 Bone Parent Index : 150 Bone Name : 151
+Bone Index : 152 Bone Parent Index : 151 Bone Name : 152
+Bone Index : 153 Bone Parent Index : 152 Bone Name : 153
+Bone Index : 154 Bone Parent Index : 140 Bone Name : 154
+Bone Index : 155 Bone Parent Index : 124 Bone Name : 155
+Bone Index : 156 Bone Parent Index : 155 Bone Name : 156
+Bone Index : 157 Bone Parent Index : 156 Bone Name : 157
+Bone Index : 158 Bone Parent Index : 157 Bone Name : 158
+Bone Index : 159 Bone Parent Index : 124 Bone Name : 159
+Bone Index : 160 Bone Parent Index : 159 Bone Name : 160
+Bone Index : 161 Bone Parent Index : 160 Bone Name : 161
+Bone Index : 162 Bone Parent Index : 161 Bone Name : 162
+Bone Index : 163 Bone Parent Index : 124 Bone Name : 163
+Bone Index : 164 Bone Parent Index : 163 Bone Name : 164
+Bone Index : 165 Bone Parent Index : 164 Bone Name : 165
+Bone Index : 166 Bone Parent Index : 165 Bone Name : 166
+Bone Index : 167 Bone Parent Index : 124 Bone Name : 167
+Bone Index : 168 Bone Parent Index : 167 Bone Name : 168
+Bone Index : 169 Bone Parent Index : 168 Bone Name : 169
+Bone Index : 170 Bone Parent Index : 169 Bone Name : 170
+Bone Index : 171 Bone Parent Index : 124 Bone Name : 171
+Bone Index : 172 Bone Parent Index : 171 Bone Name : 172
+Bone Index : 173 Bone Parent Index : 172 Bone Name : 173
+Bone Index : 174 Bone Parent Index : 173 Bone Name : 174
+Bone Index : 175 Bone Parent Index : 124 Bone Name : 175
+Bone Index : 176 Bone Parent Index : 175 Bone Name : 176
+Bone Index : 177 Bone Parent Index : 176 Bone Name : 177
+Bone Index : 178 Bone Parent Index : 177 Bone Name : 178
+Bone Index : 179 Bone Parent Index : 124 Bone Name : 179
+Bone Index : 180 Bone Parent Index : 179 Bone Name : 180
+Bone Index : 181 Bone Parent Index : 180 Bone Name : 181
+Bone Index : 182 Bone Parent Index : 181 Bone Name : 182
+Bone Index : 183 Bone Parent Index : 124 Bone Name : 183
+Bone Index : 184 Bone Parent Index : 183 Bone Name : 184
+Bone Index : 185 Bone Parent Index : 184 Bone Name : 185
+Bone Index : 186 Bone Parent Index : 185 Bone Name : 186
+Bone Index : 187 Bone Parent Index : 3 Bone Name : 187
+Bone Index : 188 Bone Parent Index : 3 Bone Name : 188
+Bone Index : 189 Bone Parent Index : 2 Bone Name : 189
+Bone Index : 190 Bone Parent Index : 2 Bone Name : 190
+Bone Index : 191 Bone Parent Index : 0 Bone Name : 191
+Bone Index : 192 Bone Parent Index : 191 Bone Name : 192
+Bone Index : 193 Bone Parent Index : 192 Bone Name : 193
+Bone Index : 194 Bone Parent Index : 0 Bone Name : 194
+Bone Index : 195 Bone Parent Index : 194 Bone Name : 195
+Bone Index : 196 Bone Parent Index : 195 Bone Name : 196
+Bone name : 0
+Bone name : 1
+Bone name : 2
+Bone name : 3
+Bone name : 4
+Bone name : 5
+Bone name : 6
+Bone name : 7
+Bone name : 8
+Bone name : 9
+Bone name : 10
+Bone name : 11
+Bone name : 12
+Bone name : 13
+Bone name : 14
+Bone name : 15
+Bone name : 16
+Bone name : 17
+Bone name : 18
+Bone name : 19
+Bone name : 20
+Bone name : 21
+Bone name : 22
+Bone name : 23
+Bone name : 24
+Bone name : 25
+Bone name : 26
+Bone name : 27
+Bone name : 28
+Bone name : 29
+Bone name : 30
+Bone name : 31
+Bone name : 32
+Bone name : 33
+Bone name : 34
+Bone name : 35
+Bone name : 36
+Bone name : 37
+Bone name : 38
+Bone name : 39
+Bone name : 40
+Bone name : 41
+Bone name : 42
+Bone name : 43
+Bone name : 44
+Bone name : 45
+Bone name : 46
+Bone name : 47
+Bone name : 48
+Bone name : 49
+Bone name : 50
+Bone name : 51
+Bone name : 52
+Bone name : 53
+Bone name : 54
+Bone name : 55
+Bone name : 56
+Bone name : 57
+Bone name : 58
+Bone name : 59
+Bone name : 60
+Bone name : 61
+Bone name : 62
+Bone name : 63
+Bone name : 64
+Bone name : 65
+Bone name : 66
+Bone name : 67
+Bone name : 68
+Bone name : 69
+Bone name : 70
+Bone name : 71
+Bone name : 72
+Bone name : 73
+Bone name : 74
+Bone name : 75
+Bone name : 76
+Bone name : 77
+Bone name : 78
+Bone name : 79
+Bone name : 80
+Bone name : 81
+Bone name : 82
+Bone name : 83
+Bone name : 84
+Bone name : 85
+Bone name : 86
+Bone name : 87
+Bone name : 88
+Bone name : 89
+Bone name : 90
+Bone name : 91
+Bone name : 92
+Bone name : 93
+Bone name : 94
+Bone name : 95
+Bone name : 96
+Bone name : 97
+Bone name : 98
+Bone name : 99
+Bone name : 100
+Bone name : 101
+Bone name : 102
+Bone name : 103
+Bone name : 104
+Bone name : 105
+Bone name : 106
+Bone name : 107
+Bone name : 108
+Bone name : 109
+Bone name : 110
+Bone name : 111
+Bone name : 112
+Bone name : 113
+Bone name : 114
+Bone name : 115
+Bone name : 116
+Bone name : 117
+Bone name : 118
+Bone name : 119
+Bone name : 120
+Bone name : 121
+Bone name : 122
+Bone name : 123
+Bone name : 124
+Bone name : 125
+Bone name : 126
+Bone name : 127
+Bone name : 128
+Bone name : 129
+Bone name : 130
+Bone name : 131
+Bone name : 132
+Bone name : 133
+Bone name : 134
+Bone name : 135
+Bone name : 136
+Bone name : 137
+Bone name : 138
+Bone name : 139
+Bone name : 140
+Bone name : 141
+Bone name : 142
+Bone name : 143
+Bone name : 144
+Bone name : 145
+Bone name : 146
+Bone name : 147
+Bone name : 148
+Bone name : 149
+Bone name : 150
+Bone name : 151
+Bone name : 152
+Bone name : 153
+Bone name : 154
+Bone name : 155
+Bone name : 156
+Bone name : 157
+Bone name : 158
+Bone name : 159
+Bone name : 160
+Bone name : 161
+Bone name : 162
+Bone name : 163
+Bone name : 164
+Bone name : 165
+Bone name : 166
+Bone name : 167
+Bone name : 168
+Bone name : 169
+Bone name : 170
+Bone name : 171
+Bone name : 172
+Bone name : 173
+Bone name : 174
+Bone name : 175
+Bone name : 176
+Bone name : 177
+Bone name : 178
+Bone name : 179
+Bone name : 180
+Bone name : 181
+Bone name : 182
+Bone name : 183
+Bone name : 184
+Bone name : 185
+Bone name : 186
+Bone name : 187
+Bone name : 188
+Bone name : 189
+Bone name : 190
+Bone name : 191
+Bone name : 192
+Bone name : 193
+Bone name : 194
+Bone name : 195
+Bone name : 196
+Animation Stack Name: SIOL|Shake_It_Off_L_bone
+   contains 1 Animation Layer
+
+AnimLayer 0
+
+
+ ------------ AnimLength : 3957Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 28
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Count = 158
+Program Success!

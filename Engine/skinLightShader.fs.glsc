@@ -1,0 +1,68 @@
+#version 400 core
+
+// Not allowed in 400, only 420
+// layout (binding = 0) uniform sampler2D tex_object;
+
+uniform sampler2D tex_object;
+
+layout (std140) uniform light
+{
+	vec4 vColor;
+	vec3 vLightPos;
+};
+
+in VS_OUT
+{
+	vec4 vFragColor;
+    vec2 textCoordinate;
+} fs_in;
+
+in vec3 newNormal;
+in vec4 newVertex;
+
+out vec4 color;
+
+void main(void)
+{
+	//surface color from tex sampler
+	vec4 surfaceColor = texture(tex_object, fs_in.textCoordinate);
+	
+	//ambient	
+	vec4 ambient = .2f * surfaceColor * vColor;
+	
+	//color = ambient + fs_in.vFragColor * surfaceColor;
+	
+	//diffuse
+		//get vLightDir
+		vec3 ecPos3 = newVertex.xyz / newVertex.w;
+		vec3 vLightDir = normalize(vLightPos - ecPos3);
+
+		//getFragColor
+		float fDot = max(0.0, dot(newNormal, vLightDir));
+		vec4 diffColor;
+		diffColor.rgb = vColor.rgb * fDot;
+		diffColor.a = vColor.a;
+
+		color = ambient + diffColor * surfaceColor;
+
+		//float fDot = max(0.0, dot(newNormal, vLightDir)); 
+		//vs_out.vFragColor.rgb = vColor.rgb * fDot;
+		//vs_out.vFragColor.a = vColor.a;
+
+	//vec4 diffuse = 
+
+	//vec4 linearcolor = ambient + diffColor * surfaceColor;
+
+	//vec4 gamma = vec4(2.0f/2.2f);
+    //color = vec4(pow(linearcolor,gamma).xyz, surfaceColor.a);
+
+	//vec4 surfaceColor = texture(tex_object, fs_in.textCoordinate);
+	//
+	//vec4 ambient = .1f * surfaceColor * vColor;
+	//color = ambient + fs_in.vFragColor * surfaceColor;
+	//
+	//vec4 linearcolor = ambient + fs_in.vFragColor * surfaceColor;
+
+	//vec4 gamma = vec4(2.0f/2.2f);
+    //color = pow(linearcolor,gamma);
+}

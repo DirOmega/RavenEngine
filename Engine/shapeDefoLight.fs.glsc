@@ -1,0 +1,59 @@
+#version 430 core
+
+uniform sampler2D tex_object;
+
+//TODO:: switch to frag lighting and the following lighting struct for better packing
+//I'm not doing it now because I wanna make a universal light struct so I can store any type of light
+//in one struct
+
+//lightPos would have w==0 for directional light instead of light pos. need to figure out spot 
+
+//layout (std140) uniform light
+//{
+//	vec3 vColor;
+//	float attenuation;
+//	vec3 vLightPos;
+//	float ambientCoefficient;
+//}
+
+layout (std140) uniform light
+{
+	vec4 vColor;
+	vec3 vLightPos;
+};
+
+in VS_OUT
+{
+	vec4 vFragColor;
+    vec2 textCoordinate;
+} fs_in;
+
+in vec3 newNormal;
+in vec4 newVertex;
+
+out vec4 color;
+
+void main(void)
+{
+	//surface color from tex sampler
+	vec4 surfaceColor = texture(tex_object, fs_in.textCoordinate);
+	
+	//ambient	
+	vec4 ambient = .2f * surfaceColor * vColor;
+	
+	//color = ambient + fs_in.vFragColor * surfaceColor;
+	
+	//diffuse
+
+		//get vLightDir
+		vec3 ecPos3 = newVertex.xyz / newVertex.w;
+		vec3 vLightDir = normalize(vLightPos - ecPos3);
+
+		//getFragColor
+		float fDot = max(0.0, dot(newNormal, vLightDir));
+		vec4 diffColor;
+		diffColor.rgb = vColor.rgb * fDot;
+		diffColor.a = vColor.a;
+
+		color = ambient + diffColor * surfaceColor;
+}

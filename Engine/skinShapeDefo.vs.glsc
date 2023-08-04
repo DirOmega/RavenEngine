@@ -1,0 +1,47 @@
+// TEXTURE RENDER - Skin Vertex Shader
+#version 440 core
+
+uniform mat4 view_matrix;
+uniform mat4 proj_matrix;
+
+//uniform ivec4 numShapeWeights;
+
+uniform mat4 boneMats[200];
+
+
+layout (std140) uniform bindArray
+{
+	mat4 bindPose[200];
+};
+
+// location is set 
+layout (location = 0) in vec4 position;
+layout (location = 1) in vec2 tc;
+layout (location = 2) in vec3 normal;
+
+layout (location = 3) in vec4  weights;
+layout (location = 4) in ivec4 BoneIndex;
+
+layout (location = 5) in vec4 shapeVert;
+
+out VS_OUT
+{
+    vec2 textCoordinate;
+} vs_out;
+
+void main(void)
+{
+	//process vertex
+	vec4 shapeBlendedVertex = shapeVert; 
+
+	vec4 newVertex;
+	
+	newVertex = boneMats[BoneIndex.x] * bindPose[BoneIndex.x] * shapeBlendedVertex * weights.x +
+				boneMats[BoneIndex.y] * bindPose[BoneIndex.y] * shapeBlendedVertex * weights.y +
+				boneMats[BoneIndex.z] * bindPose[BoneIndex.z] * shapeBlendedVertex * weights.z +
+				boneMats[BoneIndex.w] * bindPose[BoneIndex.w] * shapeBlendedVertex * weights.w;
+
+	gl_Position = proj_matrix * view_matrix  * vec4(newVertex.xyz,1.0f);
+
+    vs_out.textCoordinate = tc;
+}
