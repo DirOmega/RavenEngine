@@ -5,7 +5,7 @@
 //------------------------------------------------------------------------
 // 
 //  This class contains functions and data structure for a 4-dimensional
-//  Quaternions.  The quaternions are internally stored interms of the
+//  Quaternions.  The quaternions are internally stored in terms of the
 //  imaginary components (x,y,z) and the real components (real).
 // 
 //  In the Math library, quaternions can be thought of as "rotational"
@@ -189,8 +189,6 @@ private:
 			float _qw;
 		};
 	};
-
 };
-
 
 // ---  End of File ---------------

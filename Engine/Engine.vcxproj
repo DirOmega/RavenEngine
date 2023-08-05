@@ -106,8 +106,8 @@
     <ClInclude Include="Libs\PCSTree\include\PCSTreeForwardIterator.h" />
     <ClInclude Include="Libs\PCSTree\include\PCSTreeIterator.h" />
     <ClInclude Include="Libs\PCSTree\include\PCSTreeReverseIterator.h" />
-    <ClInclude Include="Libs\Time\Time.h" />
-    <ClInclude Include="Libs\Time\Timer.h" />
+    <ClInclude Include="Libs\Time\RvnTime.h" />
+    <ClInclude Include="Libs\Time\RvnTimer.h" />
     <ClInclude Include="MDLLoader.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelFromFile.h" />
@@ -129,7 +129,9 @@
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureMan.h" />
     <ClInclude Include="TGALoader.h" />
+    <ClInclude Include="ThreadHelper.h" />
     <ClInclude Include="ToonShader.h" />
+    <ClInclude Include="WindowsWrapper.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libs\FileSystem\lib\FileSystemDebug.lib" />
@@ -224,6 +226,7 @@
     <ClCompile Include="SkinnedModelFromFile.cpp" />
     <ClCompile Include="TexLink.cpp" />
     <ClCompile Include="TextureMan.cpp" />
+    <ClCompile Include="ThreadHelper.cpp" />
     <ClCompile Include="ToonShader.cpp" />
   </ItemGroup>
   <ItemGroup>

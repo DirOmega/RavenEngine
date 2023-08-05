@@ -31,7 +31,6 @@
 
 	const float MATH_TOLERANCE = 0.0005f;           // constant for internal tolerances
 
-
 #endif 
 
 // ---  End of File ---------------

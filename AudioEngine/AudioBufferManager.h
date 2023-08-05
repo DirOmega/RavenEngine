@@ -109,7 +109,6 @@ protected:
 	//	p->dClean();
 	//}
 
-
 	bool dCompareNodes(DLink& pLinkA, DLink& pLinkB)
 	{
 		//assert(pLinkA != nullptr);
@@ -153,4 +152,3 @@ protected:
 //	//}
 //
 //
-

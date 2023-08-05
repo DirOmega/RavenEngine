@@ -43,7 +43,6 @@ struct PackageHeader
 	static const unsigned int PACKAGE_VERSION_SIZE = 20;
 	static const unsigned int PACKAGE_NAME_SIZE = 20;
 
-
 	char			packageName[PACKAGE_NAME_SIZE];
 	char			versionString[PACKAGE_VERSION_SIZE];
 	unsigned int	numChunks;

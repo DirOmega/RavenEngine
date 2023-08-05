@@ -74,4 +74,3 @@ bool CircularData::PopFront(int &val)
 
 	return status;
 }
-

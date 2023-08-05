@@ -1,4 +1,5 @@
 #pragma once
+
 #include "SourceVoice.h"
 #include "SourceVoiceTopManager.h"
 const int MaxSounds = 6;
@@ -11,7 +12,6 @@ private:
 	static PriorityManager* pInstance;
 	PriorityManager()
 	{
-		
 	}
 
 public:
@@ -102,12 +102,9 @@ public:
 				pMan->Active[MaxPriSlot] = sv;
 				sv->play();
 			}
-	
 		}
-
 		printActive();
 	}
-
 };
 
 class printActiveCMD : public Command
@@ -115,7 +112,6 @@ class printActiveCMD : public Command
 public:
 	printActiveCMD()
 	{
-
 	}
 
 	void execute(unsigned int deltaTime)
@@ -123,7 +119,6 @@ public:
 		deltaTime;
 		PriorityManager::printActive();
 	}
-
 };
 
 class TriggerVoiceCMDpt : public Command

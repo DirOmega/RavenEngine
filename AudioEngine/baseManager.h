@@ -1,6 +1,6 @@
 #pragma once
 //#include "Common.h"
-
+//TODO:: move to common base
 #include "DLink.h"
 #include "Trace.h"
 #include <assert.h>
@@ -32,15 +32,12 @@ public:
 		return mNumActive + mNumReserved;
 	}
 
-
 	bool Remove(DLink& toRemove)
 	{
 		assert(&toRemove != nullptr);
 
-
 		removeFromActive(toRemove);
 		recycleToReserve(toRemove);
-
 
 		return true;
 	}
@@ -117,14 +114,11 @@ protected:
 		//	generateReserves(numStart);
 	}
 
-
 	virtual ~baseManager()
 	{
 		//OutputDebugStringW(L"A manager has been deleted!");
 		Trace::out("A manager has been deleted!");
 	}
-
-
 
 	DLink* baseFind(DLink& pTarget)
 	{
@@ -139,7 +133,6 @@ protected:
 		}
 		return cur;
 	}
-
 
 private:
 
@@ -173,9 +166,7 @@ protected:
 		assert(&newLink != nullptr);
 
 		DLink::addToFront(pReserveHead, newLink);
-
 	}
-
 
 	DLink* getFromReserve()
 	{
@@ -213,5 +204,4 @@ protected:
 		DLink::addToFront(pReserveHead, &toRemove);
 		mNumReserved++;
 	}
-
 };

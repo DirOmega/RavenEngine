@@ -1,3 +1,12 @@
-﻿  pch.cpp
-  FileSystem.cpp
-  FileSystem.vcxproj -> C:\Sandbox\Personal\RavenEngine\Debug\FileSystem.lib
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  File.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winbase.h(7723,48): warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to 'extern "C"' function under -EHc. Undefined behavior may occur if this function throws an exception.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1571,5): warning MSB8012: TargetPath(C:\Sandbox\Personal\RavenEngine\FileSystem\FileSystem.lib) does not match the Library's OutputFile property value (C:\Sandbox\Personal\RavenEngine\FileSystem\Debug\FileSystemDebug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1573,5): warning MSB8012: TargetName(FileSystem) does not match the Library's OutputFile property value (FileSystemDebug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  FileSystem.vcxproj -> C:\Sandbox\Personal\RavenEngine\FileSystem\FileSystem.lib
+  C:\Sandbox\Personal\RavenEngine\FileSystem\Debug\FileSystemDebug.pdb
+          1 file(s) copied.
+  C:\Sandbox\Personal\RavenEngine\FileSystem\Debug\FileSystemDebug.lib
+          1 file(s) copied.
+  C:\Sandbox\Personal\RavenEngine\FileSystem\File.h
+          1 file(s) copied.

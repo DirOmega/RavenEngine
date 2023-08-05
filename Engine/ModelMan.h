@@ -13,18 +13,14 @@ class ModelMan : public baseManager
 public:
 
 	static Model* addModel(const char * const _fileName, const char * const _name, ModelName _nameE);
-
 	static Model* addModel(const char * const _assetName, const ModelName _name);
-
 	static Model* addModelSkinned(const char * const _assetName, const ModelName _name);
-
 
 	static void deleteModels();
 	static void deleteManager();
 	static Model* find(const ModelName _name);
 
 	static void Create(int numStart = 5, int deltaAdd = 3);
-
 
 private:  // methods
 
@@ -56,5 +52,4 @@ private:  // add
 	static ModelMan* pInstance;
 	//static Model* poRefTex; //for searching
 	//TexLink *active;
-
 };

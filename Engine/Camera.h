@@ -16,7 +16,6 @@ public:
 		View1,
 		View2,
 		View3
-		
 	};
 
 	//default constructor
@@ -151,6 +150,4 @@ private:
 	int viewport_y;
 	int viewport_width;
 	int viewport_height;
-
-
 };

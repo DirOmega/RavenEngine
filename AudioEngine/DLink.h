@@ -2,7 +2,7 @@
 
 //#include "Common.h"
 #include <assert.h>
-
+//TODO:: move to common base
 class DLink
 {
 public:
@@ -19,7 +19,6 @@ public:
 
 	~DLink()
 	{
-
 	}
 
 	virtual void dClean() = 0;
@@ -33,7 +32,6 @@ public:
 		if (pHead != nullptr)
 		{
 			pHead->pPrev = pNode;
-
 		}
 
 		pNode->pNext = pHead;
@@ -76,7 +74,6 @@ public:
 
 	static DLink* baseSortAdd(DLink*& pActiveHead, DLink* toAdd)
 	{
-
 		//add to front OR add only
 		//just hoping for that early out
 		if (nullptr == pActiveHead || pActiveHead->greaterThan(toAdd))
@@ -127,9 +124,7 @@ public:
 		}
 	}
 
-
 	//	virtual void dClean() = 0;
-
 
 protected:
 

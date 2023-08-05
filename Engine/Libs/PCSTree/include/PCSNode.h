@@ -19,7 +19,6 @@ public:
 		DWORD = 0x7fffffff
 	};
 
-
 public:
 	// constructor
 	PCSNode();
@@ -78,7 +77,6 @@ private:
 
 	char     pName[PCSNode::NAME_SIZE];
 };
-
 
 #endif
 

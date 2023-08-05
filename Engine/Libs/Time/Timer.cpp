@@ -7,8 +7,7 @@
 //---------------------------------------------------------------------------
 // HEADER FILES:
 //---------------------------------------------------------------------------
-#include "Timer.h"
-
+#include "RvnTimer.h"
 
 //---------------------------------------------------------------------------
 // CONSTRUCTORS / DESTRUCTORS / ASSIGNMENT:
@@ -17,10 +16,8 @@ Timer::Timer():
 	privTicMark( Time::MAX )
 { }
 
-
 Timer::~Timer()	
 { }
-
 
 //---------------------------------------------------------------------------
 // TIMING METHODS:
@@ -29,7 +26,6 @@ void Timer::Tic()
 {
 	this->privTicMark = Timer::privGetSystemTime();
 }
-
 
 const Time Timer::Toc() const
 {
@@ -43,4 +39,3 @@ const Time Timer::Toc() const
 
 	return( elapsedTime );
 }
-

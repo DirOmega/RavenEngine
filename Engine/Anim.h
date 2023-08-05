@@ -1,7 +1,7 @@
 #ifndef ANIM_H
 #define ANIM_H
 
-#include "Timer.h"
+#include "RvnTimer.h"
 #include "FrameBucket.h"
 #include "Vect.h"
 #include "Quat.h"
@@ -72,19 +72,14 @@ public:
 	int index;
 	int parentIndex;
 	char name[24];
-
 };
-
 
 void SetAnimationHierarchy(Heap* pHeap);
 void SetAnimationData(Heap* pHeap);
 //void SetAnimationPose(Heap* pHeap, GameObject* pNode);
 void SetAnimationPose(GameObject *root, const Time& tCurr);
 
-
 void ProcessAnimation(const Time& t);
 void FindMaxTime(Time &tMax);
-
-
 
 #endif

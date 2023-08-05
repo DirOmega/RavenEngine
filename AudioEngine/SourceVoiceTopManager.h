@@ -19,12 +19,12 @@
 //
 
 //I want to clean all classes in this file up to be a factory and pool wrapped into one.
-//I want the Sourcevoice manager to have a list of nodes that contain source voice type managers
-//each type manager manages the resources of a specfic type of source voice.
+//I want the SourceVoice manager to have a list of nodes that contain source voice type managers
+//each type manager manages the resources of a specific type of source voice.
 //Since the source voice is basically locked in once created it doesn't need to do any cleaning or setting
 //after creation which would make this a simpler pool than the other managers.
 //but the multi dimensions allow me to manage multiple types of voices with different WFX stats;
-//I also want to hide everything that isnt the top level manager in a cpp file and make it a PIMPL.
+//I also want to hide everything that isn't the top level manager in a cpp file and make it a PIMPL.
 class SourceVoiceTypeManager : public baseManager
 {
 private:
@@ -61,10 +61,9 @@ public:
 		sv.pan2Ch(0.0f);
 		sv.setVolume(1.0f);
 		Remove(sv);
-		OutputDebugStringW(L"VoiceReturned Sucessfully\n");
+		OutputDebugStringW(L"VoiceReturned Successfully\n");
 		return 0;
 	}
-
 
 	/*SourceVoice* Find(VoiceTypeID eventID)
 	{
@@ -114,8 +113,8 @@ protected:
 	//	poRefTE->Name = id;
 	//	return poRefTE;
 	//}
-
 };
+
 //this allows the searching of the type managers without creating an extra manager
 class SourceVoiceType : public DLink
 {
@@ -139,7 +138,6 @@ public:
 	void dClean()
 	{
 		Name = VoiceTypeID::error;
-
 	}
 
 	SourceVoice* getSourceVoice()
@@ -152,7 +150,6 @@ public:
 	HRESULT returnSourceVoice(SourceVoice& sv)
 	{
 		return poNodeMan->returnSourceVoice(sv);
-
 	}
 };
 
@@ -170,7 +167,6 @@ private:
 	{
 		generateReserves(numStart);
 		poRefTE = new SourceVoiceType();
-
 	}
 
 	//theese just create waveformatex's for voices, it doesn't actually keep the audio loaded, the idea is to get a one second sample of a type of data
@@ -198,9 +194,7 @@ private:
 
 		helper::LoadBuffer(".\\Demo5\\s32b48000.wav", tmp, tmpbuff);
 		pSvMan->Add(VoiceTypeID::stereo32b48000, tmp);
-
 	}
-
 
 public:
 
@@ -210,7 +204,6 @@ public:
 	//add HRESULT or custom error coding.
 	static HRESULT getSourceVoice(VoiceTypeID Name, SourceVoice*& out)
 	{
-
 		//search active nodes if type isn't initlized create.
 
 		SourceVoiceManager* mrT = SourceVoiceManager::getInstance();
@@ -267,7 +260,6 @@ public:
 		return pInstance;
 	}
 
-
 	SourceVoiceType* Find(VoiceTypeID eventID)
 	{
 		SourceVoiceManager* mrT = SourceVoiceManager::getInstance();
@@ -275,7 +267,6 @@ public:
 		SourceVoiceType* target = mrT->toFind(eventID);
 		return (SourceVoiceType*)mrT->baseFind(*target);
 	}
-
 
 protected:
 
@@ -290,7 +281,6 @@ protected:
 	//	TimeEvent* p = (TimeEvent*)pLink;
 	//	p->dClean();
 	//}
-
 
 	bool dCompareNodes(DLink& pLinkA, DLink& pLinkB)
 	{
@@ -320,7 +310,6 @@ protected:
 	{
 		poRefTE->Name = id;
 		return poRefTE;
-
 	}
 };
 
@@ -337,8 +326,6 @@ public:
 	{
 		SourceVoiceManager::returnSourceVoice(*sv);
 	}
-
-
 };
 
 class ReleaseVoiceCMD : public Command
@@ -354,7 +341,6 @@ public:
 	{
 		SourceVoiceManager::returnSourceVoice(*sv);
 	}
-
 };
 
 class demo4CMD : public Command
@@ -363,10 +349,10 @@ class demo4CMD : public Command
 	char* name;
 
 public:
+
 	demo4CMD(SourceVoice* sv, char* name) : sv(sv), name(name)
 	{
 	}
-
 
 	void execute(unsigned int)
 	{

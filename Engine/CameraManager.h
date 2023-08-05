@@ -43,7 +43,4 @@ private:
 	CameraLink* poRefLink;
 	CameraLink* pActiveLink;
 	Camera* pActiveCam;
-
-
 };
-

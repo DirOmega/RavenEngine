@@ -341,9 +341,6 @@ class Time
 		Representation _rawTime;
 };
 
-
-
-
 //---------------------------------------------------------------------------
 // INLINED IMPLEMENTATION:
 //---------------------------------------------------------------------------
@@ -355,7 +352,6 @@ Time::Time(): _rawTime( 0 )
 Time::Time( const Time& rhs ): _rawTime( rhs._rawTime )
 {
 }
-
 
 Time& Time::operator=( const Time& rhs )
 {

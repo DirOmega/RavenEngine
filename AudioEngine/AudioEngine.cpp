@@ -9,12 +9,11 @@ AudioEngine::~AudioEngine()
 	pSourceVoice->DestroyVoice();*/
 
 	pXAudio2->Release();
-
+	pMasterVoice->DestroyVoice();
 	//delete testFile;
 
 	/*delete[] pDataBuffer;*/
 	CoUninitialize();
-
 }
 
 AudioEngine* AudioEngine::getInstance()
@@ -41,6 +40,7 @@ AudioEngine::AudioEngine()
 	CoInitializeEx(NULL, COINIT_MULTITHREADED);
 	startXAU2();
 	getMasterVoice();
+
 	//debugPlayWAV();
 }
 

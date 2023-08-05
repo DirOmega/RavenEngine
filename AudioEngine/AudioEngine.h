@@ -18,7 +18,6 @@ public:
 
 	static HRESULT createSourceVoice(IXAudio2SourceVoice*&sv, WAVEFORMATEX& wfx, UINT32  flags, float fRatio, IXAudio2VoiceCallback& callbackContext);
 
-
 private:
 
 	AudioEngine();

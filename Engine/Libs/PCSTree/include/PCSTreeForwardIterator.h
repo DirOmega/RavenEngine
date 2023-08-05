@@ -6,7 +6,6 @@
 class PCSTreeForwardIterator : public PCSTreeIterator
 {
 public:
-
 	PCSTreeForwardIterator(PCSNode *rootNode);
 	//virtual ~PCSTreeForwardIterator();
 	virtual PCSNode *First() override;
@@ -19,6 +18,5 @@ private:
 	PCSNode *root;
 	PCSNode *current;
 };
-
 
 #endif;

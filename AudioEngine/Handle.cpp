@@ -13,7 +13,6 @@ Handle::Handle()
 	Trace::out("Handle(): new handle(%x):0x%X\n", this->index, this->ID);
 }
 
-
 Handle::~Handle()
 {
 	// Invalidate handle;

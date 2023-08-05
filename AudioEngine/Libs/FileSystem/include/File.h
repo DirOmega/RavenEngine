@@ -68,7 +68,6 @@ public:
 	static File::Error SearchDirectory(File::Handle& fh, char* fileName, size_t& fileSize, char *& FileName);
 	static File::Error NextFile(File::Handle&fh, size_t& fileSize, char *& FileName);
 	static File::Error CloseSearch(File::Handle& fh);
-
 };
 
 #endif

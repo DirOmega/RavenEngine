@@ -2,6 +2,13 @@
 #include <string.h>
 #include <assert.h>
 #include "Trace.h"
+#include "Model.h"
+#include "ModelMan.h"
+#include "ShaderObject.h"
+#include "ShaderManager.h"
+#include "../AudioEngine/SndManager.h"
+#include "../AudioEngine/LoadManager.h"
+#include "ThreadHelper.h"
 
 //TODO:: refactor this out
 Engine * Engine::app = 0;
@@ -85,12 +92,37 @@ void Engine::privPreInitalize()
 {
 	app = this;
 	
-		if (!glfwInit())
-		{
-			fprintf(stderr, "Failed to initialize GLFW\n");
-			return;
-		}
+	if (!glfwInit())
+	{
+		fprintf(stderr, "Failed to initialize GLFW\n");
+		return;
+	}
+
+    //---------------------------------------------------------------------------------------------------------
+	// Launch Threads
+	//---------------------------------------------------------------------------------------------------------
+
+	// Create the snd system
+
+	//loadAudio();
+	//// Name the main thread....
+	SetMainThreadName("GAME");
+
 }
+
+void Engine::privStartAudioEngine()
+{
+	SndManager::Create();
+	LoadManager::Create();
+	/*std::thread  audioThread(AudioMain, SndManager::GetG2ABuff(), SndManager::GetA2GBuff());
+	SetThreadName(audioThread, "AUDIO");
+	audioThread.detach();
+
+	std::thread  loadThread(LoadMain, LoadManager::GetG2LBuff(), LoadManager::GetL2GBuff());
+	SetThreadName(loadThread, "LOAD");
+	loadThread.detach();*/
+}
+
 
 Engine::CODE Engine::privGetWindow()
 {
@@ -128,9 +160,6 @@ Engine::CODE Engine::privGetWindow()
 
 void Engine::privPreLoadContent()
 {
-
-	//privGetWindow(); //sets the member window.
-
 	if (privGetWindow() == CODE::Succes)
 	{
 		glfwMakeContextCurrent(window);
@@ -165,9 +194,31 @@ void Engine::privPreLoadContent()
 	}
 	else
 	{
-		//setup logging to explain falure
+		//setup logging to explain failure
 		assert(false);
 	}
+
+	int n = 0;
+	glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &n);
+	Trace::out("Max Vertex Attribs = %i\n", n);
+
+	glEnable(GL_CULL_FACE);
+	glFrontFace(GL_CW);
+
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LEQUAL);
+
+	//BSphere's need to be moved to Engine's preLoadContent I want engine to do some stuff before it calls into games load content
+	Model* bSphere = ModelMan::addModel("BSphere.mdl", ModelName::BSphere);
+	UNUSED_VAR(bSphere);
+
+	// Create/Load Shaders and program
+	//Move basic texture and any debug shaders/textures to engine privPreLoadContent
+	ShaderObject* pShaderObject_texture = ShaderManager::addShader(ShaderObject::ShaderName::TextureFlat, "textureRender");
+	assert(pShaderObject_texture);
+
+	ShaderObject* pShaderObject_textureLight = ShaderManager::addShader(ShaderObject::ShaderName::TexturePointLight, "texturePointLightDiff");
+	assert(pShaderObject_textureLight);
 }
 
 void Engine::Initialize()

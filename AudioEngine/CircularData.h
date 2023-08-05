@@ -26,7 +26,7 @@ private:
 	CircularIndex back;
 	bool empty;
 	bool full;
-
+	bool pad1, pad2;
 	std::mutex mtx;
 };
 

@@ -3,7 +3,7 @@
 //---------------------------------------------------------------------------
 // HEADER FILES:
 //---------------------------------------------------------------------------
-#include "Time.h"
+#include "RvnTime.h"
 #include <limits>   // For numeric_limits< Time::Representation >.
 #include <assert.h>
 
@@ -192,7 +192,6 @@ Time& Time::operator*=(const int ratio)
 	return(*this);
 }
 
-
 //---------------------------------------------------------------------------
 // DIVISION:
 //---------------------------------------------------------------------------
@@ -201,7 +200,6 @@ float Time::operator/(const Time& denominator) const
 	// !!! FIXME: Divide by zero.
 	return(	static_cast<float>(this->privRawTime) / denominator.privRawTime	);
 }
-
 
 const Time Time::operator/(const float denominator) const
 {
@@ -250,4 +248,3 @@ const Time 	Time::Remainder(const Time& numerator, const Time& denominator)
 Time::Time(const Time::Representation rawTime) : privRawTime(rawTime)
 {
 }
-

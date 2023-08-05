@@ -20,6 +20,7 @@ void SkinnedModelFromFile::privCreateVAO(const char * const pModelFileName)
 	int triIndextoRead = 0;
 	File::Read(fh, &vertstoRead, sizeof(int));
 	File::Read(fh, &triIndextoRead, sizeof(int));
+	//Trace::out(" has %i verts", vertstoRead);
 	assert(vertstoRead > 0);
 
 	//Vert_xyzuvn* cubeData = new Vert_xyzuvn[(unsigned int)vertstoRead];

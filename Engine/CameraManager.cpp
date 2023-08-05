@@ -18,8 +18,6 @@ CameraManager::CameraManager(int numStart, int  deltaAdd)
 CameraManager::~CameraManager()
 {
 	delete poRefLink;
-
-	//deleteCameras(); handled by base manager
 }
 
 CameraManager* CameraManager::privGetInstance()
@@ -34,7 +32,6 @@ CameraManager* CameraManager::privGetInstance()
 
 void CameraManager::addCamera(Camera::CameraName name, Camera* c , bool setActive)
 {
-
 	assert(c);
 
 	CameraManager* pCamMan = CameraManager::privGetInstance();
@@ -66,13 +63,12 @@ void CameraManager::deleteCameras()
 	while (pNode != 0)
 	{
 		// bye bye
-	
 		pCamMan->Remove((DLink&) *pNode);
 		pNode = (CameraLink*)pCamMan->getActiveHead();
 	}
 }
 
-//TODO:: use basefind and implement the dCompare but I would need to add a refrence version of the objects
+//TODO:: use base find and implement the dCompare but I would need to add a refrence version of the objects
 CameraLink* CameraManager::find(const Camera::CameraName _name)
 {
 	//CameraManager *pCamMan = CameraManager::privGetInstance();
@@ -113,7 +109,6 @@ void CameraManager::setActive(const Camera::CameraName cameraName)
 
 void CameraManager::Create(int numStart, int deltaAdd)
 {
-
 	assert(numStart > 0); //makes sure that it always starts with at least one
 	assert(deltaAdd > 0); // makes sure that it's usable because if this is 0 or negative the manager would not create additonal resources when it needs to.
 	assert(pInstance == nullptr);
@@ -122,7 +117,6 @@ void CameraManager::Create(int numStart, int deltaAdd)
 	{
 		pInstance = new CameraManager(numStart, deltaAdd); //TODO:: add a default camera that's auto added
 	}
-
 }
 
 Matrix& CameraManager::GetProjMatrix()
@@ -163,4 +157,3 @@ void CameraManager::dClearNode(DLink* pLink)
 {
 	pLink->dClean();
 }
-

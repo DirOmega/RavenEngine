@@ -28,7 +28,6 @@ public:
 	{
 		_aligned_free(p);
 	}
-
 };
 
 #endif

@@ -15,7 +15,6 @@ public:
 	CommandBroker* commandCenter;
 	CircularData *pOut;
 
-
 	VoiceCallback()
 	{
 		commandCenter = new CommandBroker();

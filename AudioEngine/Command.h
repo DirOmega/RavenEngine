@@ -51,7 +51,7 @@ public:
 	}
 };
 
-//I want to build theese out into lists of things that the command broker can have
+//I want to build these out into lists of things that the command broker can have
 //or make them call back to script objects or something so the work can be offloaded
 //to another thread
 class CommandBroker
@@ -91,7 +91,6 @@ public:
 
 	void BufferEndEvent()
 	{
-
 		//OutputDebugStringW(L"CommandCenter says BufferEnd\n");
 		//Trace::out("CommandCenter says BufferEnd\n");
 		OnBufferEndCmdHead->execute();
@@ -99,7 +98,6 @@ public:
 
 	void BufferStartEvent()
 	{
-
 		//OutputDebugStringW(L"CommandCenter says BufferStart\n");
 		//	Trace::out("CommandCenter says BufferStart\n");
 		OnBufferStartCmdHead->execute();
@@ -125,9 +123,7 @@ public:
 		//OutputDebugStringW(L"Command Center says VoiceError\n");
 		//Trace::out("Command Center says VoiceError\n");
 	}
-
 };
-
 
 
 //class PlayNextWAV : public Command
@@ -240,6 +236,3 @@ public:
 //		pWAV->singlePlay();
 //	}
 //};
-
-
-

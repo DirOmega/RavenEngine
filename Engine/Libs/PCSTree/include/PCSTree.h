@@ -11,7 +11,6 @@ public:
 	// Simple data structure
 	struct Info
 	{
-
 		int currNumNodes;
 		int maxNumNodes;
 		int currNumLevels;

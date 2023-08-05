@@ -38,3 +38,7 @@
 *.ipch
 *.tlog
 *.tlog
+*.log
+*.pdb
+*.testlog
+*.manifest

@@ -2,7 +2,6 @@
 #include "AudioBufferManager.h"
 #include "SourceVoiceTopManager.h"
 
-
 //Example simple client object
 //and handle/Pimpl example.
 class ActorPimpl;
@@ -39,7 +38,6 @@ public:
 	HandleStatus lineEnd();
 
 	HandleStatus setVolume(float volLevl);
-
 };
 
 class Script

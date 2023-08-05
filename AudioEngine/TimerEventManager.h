@@ -68,7 +68,6 @@ public:
 					Remove(*e);
 					e = nullptr;
 				}
-
 			}
 			else
 			{
@@ -86,7 +85,6 @@ public:
 		if (pInstance == nullptr)
 		{
 			pInstance = new TimerManager(numStart, deltaAdd);
-
 		}
 	}
 
@@ -128,7 +126,6 @@ public:
 		return pInstance;
 	}
 
-
 	TimeEvent* Find(TimeEventID eventID)
 	{
 		TimerManager* mrT = TimerManager::getInstance();
@@ -136,7 +133,6 @@ public:
 		TimeEvent* target = mrT->toFind(eventID);
 		return (TimeEvent*)mrT->baseFind(*target);
 	}
-
 
 protected:
 
@@ -151,7 +147,6 @@ protected:
 	//	TimeEvent* p = (TimeEvent*)pLink;
 	//	p->dClean();
 	//}
-
 
 	bool dCompareNodes(DLink& pLinkA, DLink& pLinkB)
 	{
@@ -189,7 +184,6 @@ class CMDQuit : public Command
 public:
 	CMDQuit()
 	{
-
 	}
 
 	void execute(unsigned int deltaTime)

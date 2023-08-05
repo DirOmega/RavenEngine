@@ -42,7 +42,6 @@ public:
 		audioData = dataBuff;
 	}
 
-
 	void set(WAVEFORMATEX inwfx, XAUDIO2_BUFFER buff)
 	{
 		this->wfx = inwfx;

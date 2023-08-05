@@ -6,7 +6,6 @@
 class PCSTreeReverseIterator : public PCSTreeIterator
 {
 public:
-
 	PCSTreeReverseIterator(PCSNode *rootNode);
 	//virtual ~PCSTreeReverseIterator();
 	virtual PCSNode *First() override;

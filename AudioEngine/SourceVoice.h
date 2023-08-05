@@ -8,7 +8,6 @@
 #include "TimerEventManager.h"
 #include "AudioBufferManager.h"
 
-
 enum VoiceTypeID
 {
 	error, mono16b44100, stereo16b44100, mono32b48000, stereo32b48000
@@ -55,11 +54,10 @@ public:
 		priority = priori;
 	}
 
-	SourceVoice() : handle(), priority(0), playTime(0)
+	SourceVoice() : handle(), priority(0), playTime(0), startTime(0), stopTime(0)
 	{
 		sv = nullptr;
 		callbackContext = nullptr;
-		playTime = 0;
 	}
 
 	void setpOut(CircularData* _pOut)
@@ -94,7 +92,6 @@ public:
 	void dClean()
 	{
 	}
-
 
 	//callback controls
 	void setStreamEndCMD(Command& cmd)
@@ -226,7 +223,6 @@ public:
 	}
 };
 
-
 class TriggerVoiceCMDwPan : public Command
 {
 public:
@@ -235,7 +231,6 @@ public:
 
 	TriggerVoiceCMDwPan(SourceVoice* sv, float pan) : sv(sv), pan(pan)
 	{
-
 	}
 
 	void execute(unsigned int deltaTime)
@@ -244,7 +239,6 @@ public:
 		sv->pan2Ch(pan);
 		sv->play();
 	}
-
 };
 
 class PlayPanCMD : public Command
@@ -270,7 +264,6 @@ public:
 		currentPan = startVal;
 		loopCount = 0;
 		//this->panTime = duration;
-
 	}
 
 	void execute(unsigned int deltaTime)
@@ -321,7 +314,6 @@ public:
 		deltaVol = -((startVal - TargetVal) / (durationInMs / 10u));
 
 		loopCount = 0;
-
 	}
 
 	void execute(unsigned int deltaTime)
@@ -369,7 +361,6 @@ public:
 	}
 };
 
-
 class getPlayTimeCMD : public Command
 {
 	SourceVoice* sv;
@@ -387,8 +378,6 @@ public:
 
 };
 
-
-
 class demo5CMD : public Command
 {
 	AudioDataBuffer* async;
@@ -399,7 +388,6 @@ public:
 
 	demo5CMD(SourceVoice* sv, SndId toPlay) : sv(sv), toPlay(toPlay), async(nullptr)
 	{
-
 	}
 
 	void execute(unsigned int)
@@ -410,6 +398,4 @@ public:
 		sv->play();
 
 	}
-
 };
-

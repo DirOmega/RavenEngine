@@ -31,7 +31,6 @@ enum w_enum
 	W = 0,
 	real = 0,
 	REAL = 0
-
 };
 
 enum m0_enum
@@ -64,7 +63,6 @@ enum m4_enum
 	M4
 };
 
-
 enum m5_enum
 {
 	m5,
@@ -88,7 +86,6 @@ enum m8_enum
 	m8,
 	M8
 };
-
 
 enum m9_enum
 {
@@ -114,7 +111,6 @@ enum m12_enum
 	M12
 };
 
-
 enum m13_enum
 {
 	m13,
@@ -127,13 +123,11 @@ enum m14_enum
 	M14
 };
 
-
 enum m15_enum
 {
 	m15,
 	M15
 };
-
 
 enum MatrixSpecialType
 {

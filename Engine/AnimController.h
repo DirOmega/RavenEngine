@@ -17,7 +17,6 @@
 #include "GraphicsObject_SkinShapeDefo.h"
 #include "GraphicsObject_SkinShapeDefoLit.h"
 
-
 #include "ComputeShaderObject.h"
 #include "ComputeShaderTest.h"
 #include "ShaderObject.h"
@@ -68,7 +67,6 @@ struct ComputeHeader
 	unsigned int numShapes;
 };
 
-
 class Vert_xyzw
 {
 public:	
@@ -116,7 +114,6 @@ public:
 
 class SSBOManager
 {
-
 };
 
 //TODO:: make sure none of this leaks
@@ -184,9 +181,6 @@ public:
 		//glBindBuffer(GL_SHADER_STORAGE_BUFFER, ssboWeights);
 		//glBufferData(GL_SHADER_STORAGE_BUFFER, (GLsizeiptr)  sizeof(float)*(int)NumShapes, NULL, GL_STATIC_DRAW);
 		//glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 2, ssboWeights);
-
-		
-
 
 		//for (unsigned int i = 0; i < NumShapes; i++)
 		//{
@@ -268,7 +262,6 @@ public:
 		glBufferStorage(GL_ATOMIC_COUNTER_BUFFER, sizeof(GLuint), NULL, GL_MAP_READ_BIT);
 		GLuint zero = 0;
 		glBufferSubData(GL_ATOMIC_COUNTER_BUFFER, 0, sizeof(GLuint), &zero);*/
-
 	}
 
 	void loadShapes(File::Handle fh, int numShapes, int numVerts)
@@ -314,7 +307,6 @@ public:
 				{
 					Trace::out("Vert %i differs %f %f %f vs %f %f %f\n", v, basisArray[v].x, basisArray[v].y, basisArray[v].z, CombinedShapeBuff[v].x, CombinedShapeBuff[v].y, CombinedShapeBuff[v].z);
 				}
-
 			}
 		}
 	}
@@ -464,7 +456,6 @@ private:
 		glBindBufferBase(GL_SHADER_STORAGE_BUFFER, (GLuint)4, ssboShapes);
 		glBindBuffer(GL_SHADER_STORAGE_BUFFER, (GLuint)0);
 	}
-
 };
 
 class ShapeClip : public DLink
@@ -501,9 +492,7 @@ public:
 				pHead = tmp;
 			}
 		}
-		//delete pHead; 
 	}
-
 };
 
 class Clip : public DLink
@@ -544,7 +533,6 @@ public:
 				pHead = tmp;
 			}
 		}
-		//delete pHead; 
 	}
 };
 
@@ -738,8 +726,6 @@ public:
 		//Hack
 		controllerID = _controllerId;
 
-		
-
 		setSkellyFromFile(skeletonFile);
 		setBindPoseFromFile(bindPoseFile);
 
@@ -756,7 +742,6 @@ public:
 		glBufferData(GL_UNIFORM_BUFFER, sizeof(float) * 16 * 200, boneResultArray, GL_DYNAMIC_DRAW);
 
 		Trace::out("end Anim Constructor\n");
-
 	}
 
 	CompositeAnimController2(const CompositeAnimController2&) = delete;
@@ -788,7 +773,6 @@ public:
 		//
 		//glBindBufferBase(GL_UNIFORM_BUFFER, pGraphics->boneArray, boneBuffer);
 		//glUniformBlockBinding(pShaderObj->getProgramObject(), pGraphics->boneArray, boneBuffer);
-
 	}
 
 	void SharedDataWithShapes(ShaderObject* pShaderObj, GraphicsObject_SkinShapeDefo* pGraphics)
@@ -1458,7 +1442,6 @@ public:
 
 			for (unsigned int i = 1; i < BoneCount; i++)
 			{
-
 				//pGraphics_TextureLight = new GraphicsObject_TextureLight(pPyramidModel, pShaderObject_textureLight, TextureName::DUCKWEED, color, pos);
 				pNullGraphics = new GraphicsObject_Null(pNullMod, pShader);
 				//pBObj = new(ScratchSpace::GetGOHeap(), Mem::Align::Byte_16, __FILE__, __LINE__) GameObjectAnim(pGraphics_TextureLight, ScratchSpace::GetGOManHeap());
@@ -1470,18 +1453,15 @@ public:
 				GameObjectMan::Add(pBObj, GameObjectList[boneArray[i].parentIndex]);
 
 				GameObjectList[i] = pBObj;
-
 			}
 
 			File::Close(fh);
 
 			delete[] boneArray;
 			delete[] GameObjectList;
-
 		}
 
 		pTree->Print();
-
 	}
 
 	void nextAnim()
@@ -1553,9 +1533,7 @@ public:
 		//GameObjectAnim*pParentNode = (GameObjectAnim*)pNode;
 
 		//walk_anim_node(pNode);
-
 	}
-
 
 	void setBonePose(GameObjectAnim*node)
 	{
@@ -1702,7 +1680,7 @@ public:
 				//	pTmp->pBone[137].S = Vect(1.0f, 1.0f, 1.0f);
 				//
 				//	//pTmp->pBone[138] = pTmp->pBone[1]
- 			//	
+ 			    //	
 				//}
 
 			}
@@ -1834,7 +1812,6 @@ public:
 		// find the "S" of the time
 		float tS = (tCurr - pA->KeyTime) / (pB->KeyTime - pA->KeyTime);
 
-
 		if (tS > 1.0f)
 		{
 			tS = 1.0f;
@@ -1856,13 +1833,11 @@ public:
 			//}
 			//else
 			//{
-
 			//	//VectApp::Lerp(bResult->T, bA->T, bB->T, tS);
 			//	QuatApp::Slerp(bResult->Q, bA->Q, bB->Q, tS);
 			//	//VectApp::Lerp(bResult->S, bA->S, bB->S, tS);
 			//}
 			//boneResultArray[i] = Matrix(TRANS,bResult->T) * Matrix(bResult->Q) * Matrix(SCALE, bResult->S);
-
 
 			// advance the pointer
 			bA++;
@@ -1904,7 +1879,6 @@ public:
 		{
 			// do nothing
 		}
-
 	}
 
 	DLink* dCreateNode()
@@ -1923,7 +1897,6 @@ public:
 		}
 
 		return retval;
-
 	}
 
 	void dClearNode(DLink* pLink)
@@ -1943,13 +1916,11 @@ public:
 	Clip*   pCurClip;
 	int		curAnims;
 
-
 	GLuint bindBuffer;
 	GLuint boneBuffer;
 
 	//Matrix* bindArray;
 	//Matrix* boneArray;
-
 
 	bool pad2[4];
 	//TEMP to work on the skinning
@@ -1957,7 +1928,6 @@ public:
 	//std::vector<GameObject> pMeshArray; 
 	Matrix* boneResultArray;
 	Matrix* bindPoseArray;
-
 
 	CompositeAnimController(const char* skeletonFile, const char* bindPoseFile)
 		: internalTime(Time::ZERO), pCurClip(0)// pClipHead(0), pCurClip(0)
@@ -1976,7 +1946,6 @@ public:
 		//glBindBuffer(GL_UNIFORM_BUFFER, boneBuffer);
 		glBindBufferBase(GL_UNIFORM_BUFFER, 3, boneBuffer);
 		glBufferData(GL_UNIFORM_BUFFER, sizeof(float) * 16 * 200, boneResultArray, GL_STATIC_DRAW);
-
 	}
 
 	CompositeAnimController(const CompositeAnimController&) = delete;
@@ -2006,13 +1975,10 @@ public:
 	//
 	//glBindBufferBase(GL_UNIFORM_BUFFER, pGraphics->boneArray, boneBuffer);
 	//glUniformBlockBinding(pShaderObj->getProgramObject(), pGraphics->boneArray, boneBuffer);
-
-
 	}
 
 	void pushBonesToGPU()
 	{
-
 		//glBindBuffer(GL_UNIFORM_BUFFER, bindBuffer);
 		//GLvoid* p = glMapBuffer(GL_UNIFORM_BUFFER, GL_WRITE_ONLY);
 		//memcpy(p, bindPoseArray, sizeof(Matrix)*80);
@@ -2034,7 +2000,7 @@ public:
 	}
 
 	//must be skinned model IDK if I'm gonna differentiate yet or how.
-	void addMesh(Model* pMdl, ShaderObject * pShaderObj, TextureName tName, bool DoubleSided)
+	void addMesh(Model* pMdl, ShaderObject * pShaderObj, TextureName tName, bool DoubleSided) //TODO:: remove bool here 
 	{
 		GameObjectRigid *pGameObj;
 		GraphicsObject_SkinFT  *pGraphics;
@@ -2667,7 +2633,6 @@ public:
 
 		if (File::Error::SUCCESS == File::Open(fh, FileName, File::Mode::READ))
 		{
-
 			unsigned int BoneCount = 0;
 
 			File::Read(fh, &BoneCount, sizeof(int));
@@ -2720,7 +2685,6 @@ public:
 
 			for (unsigned int i = 1; i < BoneCount; i++)
 			{
-
 				pGraphics_TextureLight = new GraphicsObject_TextureLight(pPyramidModel, pShaderObject_textureLight, TextureName::DUCKWEED, color, pos);
 				//pBObj = new(ScratchSpace::GetGOHeap(), Mem::Align::Byte_16, __FILE__, __LINE__) GameObjectAnim(pGraphics_TextureLight, ScratchSpace::GetGOManHeap());
 				pBObj = new GameObjectAnim(pGraphics_TextureLight);
@@ -2731,14 +2695,12 @@ public:
 				GameObjectMan::Add(pBObj, GameObjectList[boneArray[i].parentIndex]);
 
 				GameObjectList[i] = pBObj;
-
 			}
 
 			File::Close(fh);
 
 			delete[] boneArray;
 			delete[] GameObjectList;
-
 		}
 
 		pTree->Print();

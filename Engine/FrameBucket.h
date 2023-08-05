@@ -1,11 +1,10 @@
 #ifndef FRAME_BUCKET
 #define FRAME_BUCKET
 
-#include "Timer.h"
+#include "RvnTimer.h"
 #include "Vect.h"
 #include "Quat.h"
 #include "DLink.h"
-
 
 //#include "Align16.h"
 
@@ -28,7 +27,6 @@ struct Bone : Align16
 			this->S.y() != rhs.S.y() ||
 			this->S.z() != rhs.S.z();
 	}
-
 };
 
 struct Frame_Bucket 
@@ -48,9 +46,7 @@ struct Frame_Bucket
 		{
 			delete[] pBone;
 		}
-		
 	}
 };
-
 
 #endif

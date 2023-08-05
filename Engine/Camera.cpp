@@ -84,6 +84,7 @@ void Camera::setOrientAndPosition(const Vect& inUp, const Vect& inLookAt,const V
 
 	this->vPos = inPos;
 }
+
 //TODO:: make sure this is optimized it's already SIMD under the hood
 void Camera::privCalcFrustumVerts(void)
 {
@@ -99,7 +100,6 @@ void Camera::privCalcFrustumVerts(void)
 	this->farBottomLeft = this->vPos - this->vDir * this->farDist - this->vUp * this->far_height * 0.5f - this->vRight * this->far_width * 0.5f;
 	this->farBottomRight = this->vPos - this->vDir * this->farDist - this->vUp * this->far_height * 0.5f + this->vRight * this->far_width * 0.5f;
 };
-
 
 inline bool is_aligned(const void * ptr, unsigned int alignment) 
 {
@@ -173,7 +173,6 @@ void Camera::privUpdateProjectionMatrix(void)
 	this->projMatrix[m14] = (2.0f * this->farDist * this->nearDist) / (this->nearDist - this->farDist);
 	this->projMatrix[m15] = 0.0f;
 };
-
 
 //TODO:: SIMD
 void Camera::privUpdateViewMatrix(void)

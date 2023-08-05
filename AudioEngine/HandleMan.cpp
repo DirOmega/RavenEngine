@@ -93,7 +93,6 @@ HandleStatus HandleMan::ActivateHandle(HandleID &id, HandleIndex &index)
 		status = HandleStatus::Insuffient_Space;
 	}
 
-
 	return status;
 }
 
@@ -122,4 +121,3 @@ HandleMan *HandleMan::privInstance()
 
 	return &instance;
 }
-

@@ -3,8 +3,8 @@
 
 #include "GLibSetup.h"
 #include "KeyEnum.h"
-#include "Time.h"
-#include "Timer.h"
+#include "RvnTime.h"
+#include "RvnTimer.h"
 
 //TODO:: asserts EVERYWHERE
 //TODO:: reorder and organize for clarity and ease of use
@@ -56,10 +56,9 @@ private:
 
 	Engine(); //priv default constructor so end user can't call the wrong one.
 
-
 	void privPreInitalize();
 	void privPreLoadContent();
-
+	void privStartAudioEngine();
 	Engine::CODE privGetWindow();
 
 	static void APIENTRY debug_callback(GLenum source,
@@ -71,8 +70,6 @@ private:
 		GLvoid* userParam);
 
 public:
-
-
 
 	Engine(const char* windowName, const int Width, const int Height);
 	virtual ~Engine();
@@ -105,7 +102,6 @@ public:
 		
 		xPos = (float)xPosDbl;
 		yPos = (float)yPosDbl;
-
 	}
 
 	//optional override for differing clear buffer
@@ -221,7 +217,6 @@ protected:
 		info.flags.vsync = enable ? 1u : 0u;
 		glfwSwapInterval((int)info.flags.vsync);
 	}
-
 };
 
 #endif

@@ -211,6 +211,12 @@
     <Filter Include="Source Files\Animation\CamAnim">
       <UniqueIdentifier>{4e8b00e1-97ab-4965-ad71-2b76f92746c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libs\ThreadHelper">
+      <UniqueIdentifier>{b367e660-22d8-474c-8732-8483ec9dc99d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{7167c105-03e2-4a93-9e61-43c3d9b3dca5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Libs\MathLib\include\Constants.h">
@@ -405,10 +411,10 @@
     <ClInclude Include="Libs\MathLib\include\QuatApp.h">
       <Filter>Libs\MathLib\include</Filter>
     </ClInclude>
-    <ClInclude Include="Libs\Time\Timer.h">
+    <ClInclude Include="Libs\Time\RvnTimer.h">
       <Filter>Libs\Time</Filter>
     </ClInclude>
-    <ClInclude Include="Libs\Time\Time.h">
+    <ClInclude Include="Libs\Time\RvnTime.h">
       <Filter>Libs\Time</Filter>
     </ClInclude>
     <ClInclude Include="Anim.h">
@@ -521,6 +527,12 @@
     </ClInclude>
     <ClInclude Include="Libs\GLFW\include\win32_platform.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadHelper.h">
+      <Filter>Libs\ThreadHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsWrapper.h">
+      <Filter>Libs\ThreadHelper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -779,6 +791,9 @@
     </ClCompile>
     <ClCompile Include="AnimController.cpp">
       <Filter>Source Files\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadHelper.cpp">
+      <Filter>Libs\ThreadHelper</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

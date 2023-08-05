@@ -34,7 +34,6 @@ private:
 
 public:
 
-
 	SourceVoiceTypeManager(WAVEFORMATEX wfx, int numStart = 5, int deltaAdd = 3)
 		: baseManager(deltaAdd)
 	{
@@ -116,6 +115,7 @@ protected:
 	//}
 
 };
+
 //this allows the searching of the type managers without creating an extra manager
 class SourceVoiceType : public DLink
 {
@@ -139,7 +139,6 @@ public:
 	void dClean()
 	{
 		Name = VoiceTypeID::error;
-
 	}
 
 	SourceVoice* getSourceVoice()
@@ -152,7 +151,6 @@ public:
 	HRESULT returnSourceVoice(SourceVoice& sv)
 	{
 		return poNodeMan->returnSourceVoice(sv);
-
 	}
 };
 
@@ -170,7 +168,6 @@ private:
 	{
 		generateReserves(numStart);
 		poRefTE = new SourceVoiceType();
-
 	}
 
 	//theese just create waveformatex's for voices, it doesn't actually keep the audio loaded, the idea is to get a one second sample of a type of data
@@ -198,9 +195,7 @@ private:
 
 		helper::LoadBuffer(".\\Demo5\\s32b48000.wav", tmp, tmpbuff);
 		pSvMan->Add(VoiceTypeID::stereo32b48000, tmp);
-
 	}
-
 
 public:
 
@@ -210,7 +205,6 @@ public:
 	//add HRESULT or custom error coding.
 	static HRESULT getSourceVoice(VoiceTypeID Name, SourceVoice*& out)
 	{
-
 		//search active nodes if type isn't initlized create.
 
 		SourceVoiceManager* mrT = SourceVoiceManager::getInstance();
@@ -276,7 +270,6 @@ public:
 		return (SourceVoiceType*)mrT->baseFind(*target);
 	}
 
-
 protected:
 
 	void dClearNode(DLink* pLink)
@@ -290,7 +283,6 @@ protected:
 	//	TimeEvent* p = (TimeEvent*)pLink;
 	//	p->dClean();
 	//}
-
 
 	bool dCompareNodes(DLink& pLinkA, DLink& pLinkB)
 	{
@@ -320,7 +312,6 @@ protected:
 	{
 		poRefTE->Name = id;
 		return poRefTE;
-
 	}
 };
 
@@ -330,15 +321,12 @@ class StopVoiceAndReleaseCMD : public Command
 public:
 	StopVoiceAndReleaseCMD(SourceVoice* sv) : sv(sv)
 	{
-
 	}
 
 	void execute(unsigned int)
 	{
 		SourceVoiceManager::returnSourceVoice(*sv);
 	}
-
-
 };
 
 class ReleaseVoiceCMD : public Command
@@ -347,14 +335,12 @@ class ReleaseVoiceCMD : public Command
 public:
 	ReleaseVoiceCMD(SourceVoice* sv) : sv(sv)
 	{
-
 	}
 
 	void execute(unsigned int)
 	{
 		SourceVoiceManager::returnSourceVoice(*sv);
 	}
-
 };
 
 class demo4CMD : public Command
@@ -366,7 +352,6 @@ public:
 	demo4CMD(SourceVoice* sv, char* name) : sv(sv), name(name)
 	{
 	}
-
 
 	void execute(unsigned int)
 	{

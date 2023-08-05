@@ -24,8 +24,7 @@
 #include "RVNTime.h"
 #include "RVNTimer.h"
 
-
-//I want to push all this and hte mastering voice out of this file.
+//I want to push all this and the mastering voice out of this file.
 IXAudio2				*pXAudio2 = 0;
 IXAudio2MasteringVoice	*pMasterVoice = 0;
 
@@ -99,7 +98,6 @@ void LoadBuffer(const char *pFileName, WAVEFORMATEX &wfx, XAUDIO2_BUFFER &buffer
 	wfx = { 0 };
 	buffer = { 0 };
 
-
 	// -------------------------------------------------------
 	// Find and load specific Chunks
 	// -------------------------------------------------------
@@ -147,96 +145,6 @@ void LoadBuffer(const char *pFileName, WAVEFORMATEX &wfx, XAUDIO2_BUFFER &buffer
 	assert(ferror == File::Error::SUCCESS);
 }
 
-
-//void CallSound(CircularData *pOut, WAVEFORMATEX &wfx, XAUDIO2_BUFFER &buffer)
-//{
-//	// -------------------------------------------------------
-//	// Create a source voice
-//	//		Format in wfx
-//	// -------------------------------------------------------
-//	HRESULT	hr;
-//
-//	IXAudio2SourceVoice* pSourceVoice;
-//	VoiceCallback *pCallback = new VoiceCallback();
-//
-//	hr = pXAudio2->CreateSourceVoice(&pSourceVoice, (WAVEFORMATEX*)&wfx, 0, XAUDIO2_MAX_FREQ_RATIO, pCallback);
-//	assert(hr == S_OK);
-//
-//	// -------------------------------------------------------
-//	// Create a move the voice onto the voice queue
-//	//		Only files on the queue can be played
-//	//		There is no deep copy, we still hold the buffer while its active
-//	// -------------------------------------------------------
-//
-//	hr = pSourceVoice->SubmitSourceBuffer(&buffer);
-//	assert(hr == S_OK);
-//
-//	// -------------------------------------------------------
-//	// Start the source voice
-//	// -------------------------------------------------------
-//
-//	hr = pSourceVoice->Start(0);
-//	assert(hr == S_OK);
-//
-//
-//}
-//Integration from MS1 below
-//
-//void updateLoop()
-//{
-//	Timer timer;
-//	Time elapsedTime;
-//	TimerManager* tm = TimerManager::getInstance();
-//
-//	int timeInMs = 0;
-//	volatile int c = 0;
-//	while (tm->FlagQuit != true)
-//	{
-//		// Mark our begin time.
-//		timer.tic();
-//
-//		//this just lets me update the audio as fast as possibble which I'm not sure is great.
-//		c = 0;
-//
-//		for (int i = 0; i<500000; i++)
-//		{
-//			c += 1;
-//		}
-//
-//		elapsedTime = timer.toc();
-//
-//		//tm->Update(timeInMs+1);
-//		tm->Update(timeInMs);
-//		//Time elapsedTime = timer.toc();
-//		elapsedTime = timer.toc();
-//		timeInMs = Time::quotient(elapsedTime, Time(TIME_ONE_MILLISECOND));
-//		//	tm->Update(timeInMs);
-//	}
-//	//this just allows multiple demo's to use the same update loop code. in sucession
-//	tm->resetQuitFlag();
-//}
-
-//
-//void loadAudio()
-//{
-//
-//	AudioBufferManager::Add();
-//
-//
-//	AudioBufferManager::Add("heli.wav", SndId::Heli);
-//	AudioBufferManager::Add("applause.wav", SndId::Applause);
-//	AudioBufferManager::Add(".\\Seinples\\Loops\\A.wav", SndId::SLoopA);
-//	AudioBufferManager::Add(".\\Seinples\\Loops\\B.wav", SndId::SLoopB);
-//	AudioBufferManager::Add(".\\Seinples\\Loops\\C.wav", SndId::SLoopC);
-//
-//	AudioBufferManager::Add(".\\Seinples\\Transitions\\AtoB.wav", SndId::STranAtoB);
-//	AudioBufferManager::Add(".\\Seinples\\Transitions\\BtoC.wav", SndId::STranBtoC);
-//	AudioBufferManager::Add(".\\Seinples\\Transitions\\CtoA.wav", SndId::STranCtoA);
-//	AudioBufferManager::Add(".\\Seinples\\Transitions\\Intro.wav",SndId::SIntro);
-//	AudioBufferManager::Add(".\\Seinples\\Transitions\\End.wav",  SndId::SEnd);
-//
-//}
-
 Script* makeSineLoopScript()
 {
 	Script* myScript = new Script();
@@ -254,9 +162,7 @@ Script* makeSineLoopScript()
 
 Script* makeSineTransitionScript()
 {
-
 	Script* myScript = new Script();
-
 
 	myScript->addLine(*AudioBufferManager::Find(SndId::SEnd), "Sienfeld End");
 
@@ -301,20 +207,16 @@ void Demo1A()
 	cmd = new TriggerVoiceCMDwPan(SV3, 1.0f);
 	TimerManager::Add(TimeEventID::PlayAndPan, *cmd, 6000);
 
-
 	ReleaseVoiceCMD* cleanup = new ReleaseVoiceCMD(SV1);
 	SV1->setStreamEndCMD(*cleanup);
 	cleanup = new ReleaseVoiceCMD(SV2);
 	SV2->setStreamEndCMD(*cleanup);
 	cleanup = new ReleaseVoiceCMD(SV3);
 	SV3->setStreamEndCMD(*cleanup);
-
-
 }
 
 void Demo1B()
 {
-
 	AudioDataBuffer* Bassoon;
 	SourceVoice* SV1;
 	SourceVoice* SV2;
@@ -339,7 +241,6 @@ void Demo1B()
 	SV1->setStreamEndCMD(*cleanup);
 	cleanup = new ReleaseVoiceCMD(SV2);
 	SV2->setStreamEndCMD(*cleanup);
-
 }
 
 void Demo1C()
@@ -370,7 +271,6 @@ void Demo1C()
 	SV1->setStreamEndCMD(*cleanup);
 	cleanup = new ReleaseVoiceCMD(SV2);
 	SV2->setStreamEndCMD(*cleanup);
-
 }
 
 void Demo1D()
@@ -421,7 +321,6 @@ void Demo1D()
 	//sv1->setStreamEndCMD(*cleanup);
 	//cleanup = new ReleaseVoiceCMD(sv2);
 	//sv2->setStreamEndCMD(*cleanup);
-
 }
 
 void Demo1E()
@@ -464,7 +363,6 @@ void Demo1E()
 	TimerManager::Add(TimeEventID::StopVoice, *stpcmd, 81500);
 	stpcmd = new StopVoiceAndReleaseCMD(C);
 	TimerManager::Add(TimeEventID::StopVoice, *stpcmd, 81500);
-
 
 	ReleaseVoiceCMD* cleanup = new ReleaseVoiceCMD(D);
 	D->setStreamEndCMD(*cleanup);
@@ -556,7 +454,6 @@ void Demo2()
 	J->setPriority(75);
 	K->setPriority(150);
 
-
 	//I know this is horribble but it makes life so much easier.
 	TriggerVoiceCMDpt* acmd = new TriggerVoiceCMDpt(A);
 	TriggerVoiceCMDpt* bcmd = new TriggerVoiceCMDpt(B);
@@ -582,8 +479,6 @@ void Demo2()
 	TimerManager::Add(TimeEventID::PlayAndKeep, *jcmd, 7000);
 	TimerManager::Add(TimeEventID::PlayAndKeep, *kcmd, 8000);
 
-
-
 	ReleaseVoiceCMD* cleanup = new ReleaseVoiceCMD(A);
 	A->setStreamEndCMD(*cleanup);
 	cleanup = new ReleaseVoiceCMD(B);
@@ -607,7 +502,6 @@ void Demo2()
 	cleanup = new ReleaseVoiceCMD(K);
 	K->setStreamEndCMD(*cleanup);
 }
-
 
 void Demo3()
 {
@@ -648,7 +542,6 @@ void Demo3()
 	TimerManager::Add(TimeEventID::undef, *deleteActor, 66000);
 	deleteActor = new CleanupActorCMD(SineTransition);
 	TimerManager::Add(TimeEventID::undef, *deleteActor, 66000);
-
 }
 
 void Demo4()
@@ -754,87 +647,16 @@ void Demo5()
 
 	TimerManager::Add(TimeEventID::StopVoice, *scmd, 55000);
 
-
 	ReleaseVoiceCMD* cleanup = new ReleaseVoiceCMD(EVoice);
 	EVoice->setStreamEndCMD(*cleanup);
 	cleanup = new ReleaseVoiceCMD(AVoice);
 	AVoice->setStreamEndCMD(*cleanup);
 
 	//added cleanup to the stop voice cmd type used here
-
 }
 
-//void panningHeliDemo()
-//{
-//
-//	AudioDataBuffer* heli1;
-//	AudioDataBuffer* heli2;
-//	AudioDataBuffer* applause;
-//
-//	SourceVoice* StereoVoice;
-//	SourceVoice* SV1;
-//	SourceVoice* SV2;
-//	SourceVoice* SV3;
-//	SourceVoice* SV4;
-//	SourceVoice* SV5;
-//
-//	//panning heli voices
-//	SourceVoiceManager::getSourceVoice(VoiceTypeID::mono16b44100, SV1);
-//	SV1->setpOut(pOut);
-//	SourceVoiceManager::getSourceVoice(VoiceTypeID::mono16b44100, SV2);
-//	SV2->setpOut(pOut);
-//	SourceVoiceManager::getSourceVoice(VoiceTypeID::mono16b44100, SV3);
-//	SV3->setpOut(pOut);
-//	SourceVoiceManager::getSourceVoice(VoiceTypeID::mono16b44100, SV4);
-//	SV4->setpOut(pOut);
-//	SourceVoiceManager::getSourceVoice(VoiceTypeID::mono16b44100, SV5);
-//	SV5->setpOut(pOut);
-//	SourceVoiceManager::getSourceVoice(VoiceTypeID::stereo16b44100, StereoVoice);
-//	StereoVoice->setpOut(pOut);
-//
-//	//get audio data for the demo
-//	heli1 = AudioBufferManager::Find(SndId::Heli);
-//	heli2 = AudioBufferManager::Find(SndId::Heli);
-//	applause = AudioBufferManager::Find(SndId::Applause);
-//
-//	//I don't know if this is the behavior I want but since heli1 and heli2 both point
-//	//to the same underlying buffer the follow command applies to all using the buffer
-//	//but if I have a streaming audio buffer the flag would be important to know when
-//	//the stream ends.
-//	//I might want to make all resident buffers have stream end enabled by default.
-//	//still working on figuring out a good interface for everything.
-//	heli1->setStreamEnd();
-//	applause->setStreamEnd();
-//
-//	//souce voice settings
-//	SV1->SubmitAudio(*heli1);
-//	SV1->pan2Ch(-1.0f);
-//	SV2->SubmitAudio(*heli2);
-//	SV2->pan2Ch(-.5f);
-//	SV3->SubmitAudio(*heli1);
-//	SV3->pan2Ch(0.0f);
-//	SV4->SubmitAudio(*heli1);
-//	SV4->pan2Ch(.5f);
-//	SV5->SubmitAudio(*heli1);
-//	SV5->pan2Ch(1.0f);
-//	StereoVoice->SubmitAudio(*applause);
-//
-//	TriggerVoiceCMD* SV1Trigger = new TriggerVoiceCMD(SV1);
-//	TriggerVoiceCMD* SV2cbTrigger = new TriggerVoiceCMD(SV2);
-//	TriggerVoiceCMD* SV3cbTrigger = new TriggerVoiceCMD(SV3);
-//	TriggerVoiceCMD* SV4cbTrigger = new TriggerVoiceCMD(SV4);
-//	TriggerVoiceCMD* SV5cbTrigger = new TriggerVoiceCMD(SV5);
-//
-//	//StopVoiceCMD* ApplStopTrigger = new StopVoiceCMD(StereoVoice);
-//	TriggerVoiceCMD* ApplStartTrigger = new TriggerVoiceCMD(StereoVoice);
-//
-//	//change for narration to trigger after first line finishes.
-//	//will autoStart when the update loop starts and not before.
-//	TimerManager::Add(TimeEventID::TriggerVoice, *SV1Trigger, 10000u);
-//	//	tm->Add(TimeEventID::StopVoice, *ApplStopTrigger, 12000);
-//	//tm->Add(TimeEventID::TriggerVoice, *ApplStartTrigger, 10000);
-//
-//	//thesse commands are not fired by the timer but by the callbacks, I have it setup so
+// @8-5-23 idk if theese are still valid still cleaning everything up
+//	TODO::thesse commands are not fired by the timer but by the callbacks, I have it setup so
 //	//you can load and swap commands into the callback context of a source voice
 //	//so you can reuse a voice and change it's commands even though the callback context
 //	//in engine cant be changed.
@@ -853,20 +675,11 @@ void Demo5()
 //	//so I made actors that wrap source voices and sets of buffers.
 //}
 
-
-
 //Integration from MS1 above
 void AudioMain(CircularData *pIn, CircularData *_pOut)
 {
 	pIn;
 	pOut = _pOut;
-
-	/*WAVEFORMATEX wfx0;
-	XAUDIO2_BUFFER    buffer0;
-	WAVEFORMATEX wfx1;
-	XAUDIO2_BUFFER    buffer1;
-	WAVEFORMATEX wfx2;
-	XAUDIO2_BUFFER    buffer2;*/
 
 	//InitializeXAudio2();
 	pXAudio2 = AudioEngine::getInstance()->pXAudio2;
@@ -899,6 +712,7 @@ void AudioMain(CircularData *pIn, CircularData *_pOut)
 			{
 				Demo1();
 			}
+
 			if (val == (int)SndId::D2Start)
 			{
 				Demo2();
@@ -917,7 +731,6 @@ void AudioMain(CircularData *pIn, CircularData *_pOut)
 			if (val == (int)SndId::D5Start)
 			{
 				Demo5();
-				//Demo1();
 			}
 
 			val = 0;
@@ -927,7 +740,5 @@ void AudioMain(CircularData *pIn, CircularData *_pOut)
 		tm->Update(timeInMs);
 		elapsedTime = timer.toc();
 		timeInMs = Time::quotient(elapsedTime, Time(TIME_ONE_MILLISECOND));
-
 	}
-
 }

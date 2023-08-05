@@ -11,7 +11,6 @@
 #include "File.h"
 #include "CamVals.h"
 
-
 struct CamFrame_Bucket : Align16
 {
 	CamFrame_Bucket *nextBucket;
@@ -42,7 +41,6 @@ public:
 	Time maxTime;
 	int numShapes;
 	CamFrame_Bucket* pHead;
-
 	//bool pad2[4];
 
 	void dClean()
@@ -62,7 +60,6 @@ public:
 		}
 		//delete pHead; 
 	}
-
 };
 
 class CamAnimController : public baseManager
@@ -71,11 +68,9 @@ public:
 
 	bool	pad1[4];
 	Time    internalTime;
-
 	CamClip*   pCurClip;
 	int		curAnims;
 	//bool pad2[4];
-
 
 	CamAnimController(const char* camFileName)
 		: internalTime(Time::ZERO), pCurClip(0)// pClipHead(0), pCurClip(0)
@@ -118,7 +113,6 @@ public:
 
 	void camTrackFromFile(const char* fileName)
 	{
-
 		File::Handle fh;
 		if (File::Error::SUCCESS == File::Open(fh, fileName, File::Mode::READ))
 		{
@@ -207,7 +201,6 @@ public:
 
 	void processAnimHelper(const Time& tCurr, CamClip* pClip)
 	{
-
 		CamFrame_Bucket* pHead = pClip->pHead;
 		// Note: these static should be tied into an animation system
 
@@ -283,12 +276,10 @@ public:
 	//TODO:: it might be worth noting that i may need to change the ordering for the CP's becuase it stated online that P0 is start and P3 is last.
 	float bezLerp(char P0x, char P0y, char P1x, char P1y, char P2x, char P2y, char P3x, char P3y, float t)
 	{
-
 		UNUSED_VAR(P3x);
 		UNUSED_VAR(P2x);
 		UNUSED_VAR(P0x);
 		UNUSED_VAR(P1x);
-
 
 		float x0 = P0x;
 		float y0 = P0y;
@@ -312,12 +303,9 @@ public:
 		return out;
 
 		//return ax * t3 + bx * t2 + cx * t + x0;
-
 		//return powf((1 - t), 3) * P0 + 3 * t* powf((1 - t), 2) * P2 + 3 * powf(t, 2) * (1 - t)*P3 + powf(t, 3) * P1;
-
 		//return powf((1 - t), 3) * P0 + 3 * t* powf((1 - t), 2) * P1 + 3 * powf(t, 2) * (1 - t)*P2 + powf(t, 3) * P3;
 	}
-
 
 	void CProcessAnimation(const Time& deltaT)
 	//void CProcessAnimation(const float deltaT)
@@ -332,13 +320,10 @@ public:
 
 		//Time deltaTime = deltaT / NTSCFrame;
 		
-
 		//internalTime += deltaTime;
 		internalTime += deltaT;
 		Time maxTime;
 		FindMaxTime(maxTime);
-
-		
 
 		// protection for time values for looping
 		if (internalTime < tZero)
@@ -353,7 +338,6 @@ public:
 		{
 			// do nothing
 		}
-
 	}
 
 	DLink* dCreateNode()

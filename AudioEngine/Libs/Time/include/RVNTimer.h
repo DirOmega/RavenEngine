@@ -85,8 +85,6 @@ class Timer
 	
 		// Data
 		Time _ticMark;
-	};
-
+};
 
 #endif   // Timer_h
-

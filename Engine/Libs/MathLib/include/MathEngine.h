@@ -10,7 +10,6 @@
 #include "VectApp.h"
 #include "Constants.h"
 
-
 #define MATH_UNUSED(x) (void)x
 
 // ---  End of File ---------------

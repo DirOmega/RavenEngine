@@ -1,13 +1,12 @@
 /*
  * Timer_win32.cpp
- *
  * Timer implementation specific to the win32 platform.
  */
 
 //---------------------------------------------------------------------------
 // HEADER FILES:
 //---------------------------------------------------------------------------
-#include "Timer.h"
+#include "RvnTimer.h"
 #include <windows.h>
 
 //---------------------------------------------------------------------------
@@ -39,4 +38,3 @@ const Time Timer::privGetSystemTime()
 
 	return( systemTime );
 }
-

@@ -200,9 +200,7 @@ public:
 
 	bool isEqual(const Matrix& rhs);
 
-
 	//extensions not yet with unit tests
-
 
 private:
 
