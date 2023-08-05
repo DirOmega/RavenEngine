@@ -1,9 +1,3 @@
-//-----------------------------------------------------------------------------
-// Copyright Ed Keenan 2017
-// Optimized C++
-//----------------------------------------------------------------------------- 
-
-
 #include "Util.h"
 //TODO:: optimze and add SIMD Versions
 bool Util::isEqual ( const float a, const float b, const float epsilon)
@@ -38,4 +32,3 @@ bool Util::isZero ( const float a, const float epsilon)
 }
 
 // ---  End of File ---------------
-

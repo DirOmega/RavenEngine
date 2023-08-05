@@ -7,7 +7,6 @@
 #include "RvnTime.h"
 #include "RvnTimer.h"
 
-
 class Game : public Engine
 {
 public:

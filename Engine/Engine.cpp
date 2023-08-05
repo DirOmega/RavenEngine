@@ -112,8 +112,8 @@ void Engine::privPreInitalize()
 
 void Engine::privStartAudioEngine()
 {
-	SndManager::Create();
-	LoadManager::Create();
+	//SndManager::Create();
+	//LoadManager::Create();
 	/*std::thread  audioThread(AudioMain, SndManager::GetG2ABuff(), SndManager::GetA2GBuff());
 	SetThreadName(audioThread, "AUDIO");
 	audioThread.detach();

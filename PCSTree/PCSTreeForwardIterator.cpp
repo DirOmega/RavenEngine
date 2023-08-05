@@ -5,7 +5,6 @@
 
 PCSTreeForwardIterator::PCSTreeForwardIterator(PCSNode *rootNode) : root(rootNode), current(rootNode)
 {
-
 }
 
 PCSNode *PCSTreeForwardIterator::First()

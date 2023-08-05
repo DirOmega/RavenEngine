@@ -4,6 +4,8 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\winbase.h(7723,48
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1571,5): warning MSB8012: TargetPath(C:\Sandbox\Personal\RavenEngine\FileSystem\FileSystem.lib) does not match the Library's OutputFile property value (C:\Sandbox\Personal\RavenEngine\FileSystem\Debug\FileSystemDebug.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1573,5): warning MSB8012: TargetName(FileSystem) does not match the Library's OutputFile property value (FileSystemDebug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
   FileSystem.vcxproj -> C:\Sandbox\Personal\RavenEngine\FileSystem\FileSystem.lib
+  A subdirectory or file C:\Sandbox\Personal\RavenEngine\dist\FileSystem\lib already exists.
+  A subdirectory or file C:\Sandbox\Personal\RavenEngine\dist\FileSystem\include already exists.
   C:\Sandbox\Personal\RavenEngine\FileSystem\Debug\FileSystemDebug.pdb
           1 file(s) copied.
   C:\Sandbox\Personal\RavenEngine\FileSystem\Debug\FileSystemDebug.lib

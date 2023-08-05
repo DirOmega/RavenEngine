@@ -1,10 +1,7 @@
 #pragma warning (push)
 #pragma warning (disable :4201)
-
 #include <math.h>
-
 #pragma warning (pop)
-
 
 #include <xmmintrin.h>
 #include <smmintrin.h> 

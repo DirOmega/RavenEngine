@@ -207,8 +207,6 @@ void Game::LoadContent()
 	pFRIEND->addMesh(pPinkAccents, pSkinLightShader, TextureName::FClothColor, false, true);
 	pFRIEND->addMesh(pUnderSkirt, pSkinLightShader, TextureName::FClothColor, true, true);
 	pFRIEND->addMesh(pUndies, pSkinLightShader, TextureName::FUndies, false, true);
-
-	
 }
 
 //TODO:: add float * conversion operator to the math lib

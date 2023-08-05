@@ -1,8 +1,3 @@
-//-----------------------------------------------------------------------------
-// Copyright Ed Keenan 2017
-// Optimized C++
-//----------------------------------------------------------------------------- 
-
 #pragma warning (push)
 #pragma warning (disable : 4820)
 #include <new>
@@ -358,4 +353,5 @@ void Mem::RemoveBlockForTracking(Block* toRemove)
 }
 
 Mem* Mem::Instance = new Mem();
+
 // ---  End of File ---------------

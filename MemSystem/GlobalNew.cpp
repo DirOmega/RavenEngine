@@ -1,8 +1,3 @@
-//-----------------------------------------------------------------------------
-// Copyright Ed Keenan 2017
-// Optimized C++
-//----------------------------------------------------------------------------- 
-
 #include "Mem.h"
 #include "Heap.h"
 #include "GlobalNew.h"
@@ -21,7 +16,7 @@ void * operator new( size_t inSize )
 	return p;
 }
 
-// operator delete
+// operator placement delete
 void operator delete( void *p, Heap *pHeap, Mem::Align align, char *inName, int lineNum)
 {
 	STUB_PLEASE_REPLACE(p);

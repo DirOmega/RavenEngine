@@ -1,7 +1,3 @@
-//-----------------------------------------------------------------------------
-// Copyright Ed Keenan 2017
-// Optimized C++
-//----------------------------------------------------------------------------- 
 #pragma warning (push)
 #pragma warning (disable : 4820)
 #include <assert.h>
@@ -42,7 +38,6 @@ void Heap::nameCpy(const char* const pInName)
 	}
 }
 
-
 Heap::Heap(unsigned int heapSize, const char * const Name, Mem * const _pMem, HANDLE heapHandle) : mInfo({ 0 }), pMem(_pMem)
 {
 
@@ -68,7 +63,6 @@ HANDLE Heap::getHandle()
 {
 	return mWinHeapHandle;
 }
-
 
 void* Heap::privAlloc(size_t inSize, unsigned int align, char *inName, int lineNum,unsigned int allocIndex)
 {

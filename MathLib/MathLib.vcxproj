@@ -202,7 +202,6 @@ copy   $(ProjectDir)*.h $(SolutionDir)\dist\$(ProjectName)\include\.</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Matrix.cpp" />
-    <ClCompile Include="test.cpp" />
     <ClCompile Include="Util.cpp" />
     <ClCompile Include="Vect.cpp" />
   </ItemGroup>

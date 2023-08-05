@@ -80,7 +80,6 @@ void main()
 		File::Write(fh, triList, Diamond::getTriArraySize());
 
 		File::Close(fh);
-
 	}
 
 	if(File::Error::SUCCESS == File::Open(fh, NoIdea::getFileName(), File::Mode::READ_WRITE))
